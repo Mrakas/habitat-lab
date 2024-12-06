@@ -63,7 +63,7 @@ def save_image_and_location(observations, env, img_path, json_path):
         "episode_id": None,
         "scene_id": env.current_episode.scene_id,
         "start_position": random_start_point,
-        "start_rotation": None,
+        "start_rotation": agent_rotation,# start rotation == agent rotation
         "info": {
             "geodesic_distance": None,#float(observations["pointgoal_with_gps_compass"][0])
             "difficulty": None
