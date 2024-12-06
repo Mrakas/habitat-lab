@@ -7,14 +7,14 @@ defaults:
 
 habitat:
   environment:
-    max_episode_steps: 500
+    max_episode_steps: 5000
   simulator:
     agents:
       main_agent:
         sim_sensors:
           rgb_sensor:
-            width: 256
-            height: 256
+            width: 512
+            height: 512
           depth_sensor:
-            width: 256
-            height: 256
+            width: 512
+            height: 512
