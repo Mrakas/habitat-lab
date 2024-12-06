@@ -7,18 +7,38 @@ import json
 import uuid
 import quaternion
 import numpy as np
+import random
+import time
 
 FORWARD_KEY = "w"
 LEFT_KEY = "a"
 RIGHT_KEY = "d"
 FINISH = "f"
 SAVE_KEY = "k"
-
+DISTANCE = 8
 img_save_path = "/home/marcus/workplace/habitat-lab/AEQA/data/imgs/"
 json_save_path = "/home/marcus/workplace/habitat-lab/AEQA/data/destinations/"
 
 def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
+
+
+def get_valid_random_point(sim, agent_position, DISTANCE=20):
+    cnt = 100
+    while cnt > 0:
+        sim.pathfinder.seed(int(time.time()) + random.randint(0, 1000))
+        random_point = sim.pathfinder.get_random_navigable_point()
+
+        #culculate distance
+        distance = np.linalg.norm(np.array(random_point) - np.array(agent_position))
+        cnt -= 1
+        print("Random point: ", random_point)
+        print("Agent position: ", agent_position)
+        print("Distance: ", distance)
+        if distance > DISTANCE:
+            return random_point
+        
+    raise Exception("Could not find a valid random point.")
 
 def save_image_and_location(observations, env, img_path, json_path):
     image_uuid = str(uuid.uuid4())
@@ -34,38 +54,45 @@ def save_image_and_location(observations, env, img_path, json_path):
     rgb_position = agent_state.sensor_states["rgb"].position.tolist()
     rgb_rotation = quaternion.as_float_array(agent_state.sensor_states["rgb"].rotation).tolist()
     
-    depth_position = agent_state.sensor_states["depth"].position.tolist()
-    depth_rotation = quaternion.as_float_array(agent_state.sensor_states["depth"].rotation).tolist()
-
+    #depth_position = agent_state.sensor_states["depth"].position.tolist()
+    #depth_rotation = quaternion.as_float_array(agent_state.sensor_states["depth"].rotation).tolist()
+    random_start_point = get_valid_random_point(env.sim, agent_position=agent_position, DISTANCE=DISTANCE)
+    random_start_point = random_start_point.tolist()
+    #get a valid random point with distance = X from the agent
     location_data = {
-        "image_uuid": image_uuid,
-        "AgentState": {
-            "location": {
-                "destination_distance": float(observations["pointgoal_with_gps_compass"][0]),#useless
-                "theta_radians": float(observations["pointgoal_with_gps_compass"][1])#useless
-            },
-            "agent_state": {
-                "position": agent_position,
-                "rotation": agent_rotation
-            }
+        "episode_id": None,
+        "scene_id": env.current_episode.scene_id,
+        "start_position": random_start_point,
+        "start_rotation": None,
+        "info": {
+            "geodesic_distance": None,#float(observations["pointgoal_with_gps_compass"][0])
+            "difficulty": None
         },
+        "goals": [
+            {
+                "position": agent_position,
+                "rotation": agent_rotation,
+                "radius": None
+            }
+        ],
+        "shortest_paths": None,
+        "start_room": None,
+        "image_uuid": image_uuid,
+        "traj_flag": False,
         "sensor_states": {
             "rgb": {
                 "position": rgb_position,
                 "rotation": rgb_rotation
             },
-            "depth": {
-                "position": depth_position,
-                "rotation": depth_rotation
-            }
-        }
+        },
+        
     }
-    
     json_full_path = os.path.join(json_path, image_uuid + ".json")
     with open(json_full_path, 'w') as json_file:
         json.dump(location_data, json_file)
 
 #AgentState(position=array([-7.3699493 ,  0.08276175,  6.5762997 ], dtype=float32), rotation=quaternion(-0.269477784633636, 0, 0.963006675243378, 0), sensor_states={'rgb': SixDOFPose(position=array([-7.3699493,  1.3327618,  6.5762997], dtype=float32), rotation=quaternion(-0.269477784633636, 0, 0.963006675243378, 0)), 'depth': SixDOFPose(position=array([-7.3699493,  1.3327618,  6.5762997], dtype=float32), rotation=quaternion(-0.269477784633636, 0, 0.963006675243378, 0))})  
+
 
 def from_json_to_state(json_path: str) -> AgentState:
     with open(json_path, 'r') as json_file:
@@ -84,9 +111,6 @@ def from_json_to_state(json_path: str) -> AgentState:
     
     return AgentState(position=position, rotation=rotation, sensor_states=sensor_states)
 
-
-
-
 def example():
     env = habitat.Env(
         config=habitat.get_config("benchmark/nav/pointnav/pointnav_habitat_test.yaml")
@@ -95,11 +119,8 @@ def example():
     print("Environment creation successful")
     env.seed(25)
     observations = env.reset()
-    #random spawn
-    #import pdb; pdb.set_trace()
     random_start_point = env.sim.sample_navigable_point()
     print("Random start point: ", random_start_point)
-    #import pdb; pdb.set_trace()
     print("Destination, distance: {:3f}, theta(radians): {:.2f}".format(
         observations["pointgoal_with_gps_compass"][0],
         observations["pointgoal_with_gps_compass"][1]))
@@ -113,10 +134,10 @@ def example():
     env.sim.get_agent_state()
 
     env.sim.set_agent_state(random_start_point, rotation=quaternion.quaternion(1, 0, 0, 0))
-    #import pdb; pdb.set_trace()
 
     count_steps = 0
     while not env.episode_over:
+        #import pdb; pdb.set_trace()
         #cv2.resizeWindow("RGB", 1800, 600)
         keystroke = cv2.waitKey(0)
         if keystroke == ord(FORWARD_KEY):

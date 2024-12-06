@@ -11,6 +11,8 @@ FINISH="f"
 RANDOM_MOVE="y"
 TMP="p"
 
+
+
 def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
 
