@@ -13,13 +13,13 @@ if TYPE_CHECKING:
     from habitat.sims.habitat_simulator.habitat_simulator import HabitatSim
 import numpy as np
 from habitat_sim.agent.agent import AgentState, SixDOFPose
-from utils import DestinationDataLoader
+
 
 FORWARD_KEY="w"
 LEFT_KEY="a"
 RIGHT_KEY="d"
 FINISH="f"
-Y="y"
+RANDOM_MOVE="y"
 TMP="p"
 TEST="t"
 
@@ -84,94 +84,61 @@ def example():
         observations["pointgoal_with_gps_compass"][0],
         observations["pointgoal_with_gps_compass"][1]))
     cv2.imshow("RGB", transform_rgb_bgr(observations["rgb"]))
+
     print("Agent stepping around inside environment.")
     
     count_steps = 0
+
     agent = ShortestPathFollowerAgent(env=env, goal_radius=1)
-    #env.current_episode
-    
-    data_loader = DestinationDataLoader('/home/marcus/workplace/habitat-lab/AEQA/data/destinations')
 
-    print("agent_state-------------", env.sim.get_agent_state())
+    env.current_episode
 
-    for file_path in data_loader:
 
-            
-        env = habitat.Env(
-            config=habitat.get_config("benchmark/nav/pointnav/pointnav_habitat_test.yaml")
-        )
+    file_path = '/home/marcus/workplace/habitat-lab/AEQA/data/destinations/6cb04ecb-6ec7-419d-918e-17cba0c340fe.json'
+    with open (file_path, 'r') as f:
+        data = json.load(f)
+    # agent_start = AgentState
+    # agent_end = AgentState
+    # agent_start.position = data['start_position']
+    # agent_start.rotation = quaternion.quaternion(*data['start_rotation'])
+
+    # agent_end.position = data['goals'][0]['position']
+    # agent_end.rotation = quaternion.quaternion(*data['goals'][0]['rotation'])
+
+    # samples = [(agent_start.position,agent_end.position)]
+    # get_shortest_path(env.sim, samples)
+
+
+
+    while not env.episode_over:
+        #habitat_sim.nav.GreedyGeodesicFollower.find_path
+        keystroke = cv2.waitKey(0)
+        #import ipdb; ipdb.set_trace()
         
-        print("Environment creation successful")
-        observations = env.reset()
+        if keystroke == ord(RANDOM_MOVE):
+            action = agent.act(observations)
+            print("Agent's position has been reset to a random valid point.")
+        elif keystroke == ord(TEST):
+            agent = from_json_to_state("/home/marcus/workplace/habitat-lab/AEQA/data/destinations/6cb04ecb-6ec7-419d-918e-17cba0c340fe.json")    
+            env.sim.set_agent_state(position=agent.position, rotation=agent.rotation)
+
+        observations = env.step(action)
+        count_steps += 1
+
         print("Destination, distance: {:3f}, theta(radians): {:.2f}".format(
             observations["pointgoal_with_gps_compass"][0],
             observations["pointgoal_with_gps_compass"][1]))
         cv2.imshow("RGB", transform_rgb_bgr(observations["rgb"]))
-        print("Agent stepping around inside environment.")
-        
-        count_steps = 0
-        agent = ShortestPathFollowerAgent(env=env, goal_radius=1)
-        
-        with open(file_path, 'r') as f:
-            data = json.load(f)
 
-        if data['shortest_paths'] is not None: # 如果已经计算过最短路径，跳过
-            print("pass",file_path)
-            continue
-        print("file_path:",file_path)
+    print("Episode finished after {} steps.".format(count_steps))
 
-        #修改起点
-        env.sim.set_agent_state(position=data['start_position'], rotation=quaternion.quaternion(*data['start_rotation']))
-        print("ENV-rotation====",env.sim.get_agent_state().rotation)
-        print("my-rotation====",data['start_rotation'])
-        print("data_loader",data_loader)
-        #修改终点
-        env.current_episode.goals[0].position = data['goals'][0]['position']
-
-        shortest_paths =[]
-        #迭代修改坐标
-        #append路径
-
-        while not env.episode_over:
-            #habitat_sim.nav.GreedyGeodesicFollower.find_path
-            keystroke = cv2.waitKey(0)
-
-            shortest_paths.append(env.sim.get_agent_state().position.tolist())
-            shortest_paths.append(quaternion.as_float_array(env.sim.get_agent_state().rotation).tolist())
-            #import ipdb; ipdb.set_trace()
-            print(shortest_paths)
-            #import ipdb; ipdb.set_trace()
-            if keystroke == ord(FORWARD_KEY):
-                action = HabitatSimActions.move_forward
-                print("action: FORWARD")
-            elif keystroke == ord(LEFT_KEY):
-                action = HabitatSimActions.turn_left
-                print("action: LEFT")
-            elif keystroke == ord(RIGHT_KEY):
-                action = HabitatSimActions.turn_right
-                print("action: RIGHT")
-            elif keystroke == ord(Y):
-                action = agent.act(observations)
-                print("towards gt")
-            elif keystroke == ord(FINISH):
-                action = HabitatSimActions.stop
-                print("action: FINISH")
-            else:
-                print("INVALID KEY")
-                continue
-            observations = env.step(action)
-            count_steps += 1
-
-            # print("Destination, distance: {:3f}, theta(radians): {:.2f}".format(
-            #     observations["pointgoal_with_gps_compass"][0],
-            #     observations["pointgoal_with_gps_compass"][1]))
-            cv2.imshow("RGB", transform_rgb_bgr(observations["rgb"]))
-
-        with open(file_path, 'w') as f:
-            data['shortest_paths'] = shortest_paths
-            json.dump(data,f, indent=4)
-
-        print("Episode finished after {} steps.".format(count_steps))
+    if (
+        action == HabitatSimActions.stop
+        and observations["pointgoal_with_gps_compass"][0] < 0.2
+    ):
+        print("you successfully navigated to destination point")
+    else:
+        print("your navigation was unsuccessful")
 
 
 if __name__ == "__main__":

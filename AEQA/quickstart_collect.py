@@ -23,7 +23,7 @@ def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
 
 
-def get_valid_random_point(sim, agent_position, DISTANCE=20):
+def get_valid_random_point(sim, agent_position, DISTANCE):
     cnt = 100
     while cnt > 0:
         sim.pathfinder.seed(int(time.time()) + random.randint(0, 1000))
@@ -108,7 +108,6 @@ def from_json_to_state(json_path: str) -> AgentState:
         )
         for sensor, sensor_data in data['sensor_states'].items()
     }
-    
     return AgentState(position=position, rotation=rotation, sensor_states=sensor_states)
 
 def example():
@@ -140,6 +139,7 @@ def example():
         #import pdb; pdb.set_trace()
         #cv2.resizeWindow("RGB", 1800, 600)
         keystroke = cv2.waitKey(0)
+        print("agent_state2", env.sim.get_agent_state())
         if keystroke == ord(FORWARD_KEY):
             action = HabitatSimActions.move_forward
             print("action: FORWARD")
@@ -154,7 +154,7 @@ def example():
             print("action: FINISH")
         elif keystroke == ord(SAVE_KEY):
             save_image_and_location(observations, env, img_save_path, json_save_path)
-            print("Image and location saved.")
+            print("Image and location saved.",env.sim.get_agent_state())
             continue
         else:
             print("INVALID KEY")

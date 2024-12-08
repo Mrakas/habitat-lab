@@ -22,16 +22,13 @@ def example():
     env = habitat.Env(
         config=habitat.get_config("benchmark/nav/pointnav/pointnav_habitat_test.yaml")
     )
+    print("Environment creation successful")
     
     #read js
     file_path = '/home/marcus/workplace/habitat-lab/AEQA/data/destinations/2912802b-bfe0-421c-9699-5779f93c6897.json'
-
     with open(file_path, 'r') as f:
         data = json.load(f)
 
-    print(data)
-
-    print("Environment creation successful")
     observations = env.reset()
     print("Destination, distance: {:3f}, theta(radians): {:.2f}".format(
         observations["pointgoal_with_gps_compass"][0],
