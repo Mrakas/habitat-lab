@@ -9,16 +9,22 @@ import quaternion
 import numpy as np
 import random
 import time
+from pathlib import Path
+import gzip
+import shutil
 
 FORWARD_KEY = "w"
 LEFT_KEY = "a"
 RIGHT_KEY = "d"
 FINISH = "f"
+NEW_EPISODE = "n"
 SAVE_KEY = "k"
-DISTANCE = 8
+
+DISTANCE = 8 # distance from agent to random start point
 img_save_path = "/home/marcus/workplace/habitat-lab/AEQA/data/imgs/"
 json_save_path = "/home/marcus/workplace/habitat-lab/AEQA/data/destinations/"
-
+map_path = "/home/marcus/workplace/habitat-lab/data/datasets/pointnav/hm3d/v1/train/train.json"
+map_list_path = "/home/marcus/workplace/habitat-lab/AEQA/config/map_list.json"
 def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
 
@@ -41,7 +47,7 @@ def get_valid_random_point(sim, agent_position, DISTANCE):
     raise Exception("Could not find a valid random point.")
 
 def save_image_and_location(observations, env, img_path, json_path):
-    image_uuid = str(uuid.uuid4())
+    image_uuid = episode_uuid = str(uuid.uuid4())
     image_name = image_uuid + ".png"
     image_full_path = os.path.join(img_path, image_name)
     cv2.imwrite(image_full_path, transform_rgb_bgr(observations["rgb"]))
@@ -77,7 +83,7 @@ def save_image_and_location(observations, env, img_path, json_path):
         ],
         "shortest_paths": None,
         "start_room": None,
-        "image_uuid": image_uuid,
+        "image_uuid": [image_uuid],
         "traj_flag": False,
         "sensor_states": {
             "rgb": {
@@ -90,29 +96,73 @@ def save_image_and_location(observations, env, img_path, json_path):
     json_full_path = os.path.join(json_path, image_uuid + ".json")
     with open(json_full_path, 'w') as json_file:
         json.dump(location_data, json_file)
+    return episode_uuid
 
-#AgentState(position=array([-7.3699493 ,  0.08276175,  6.5762997 ], dtype=float32), rotation=quaternion(-0.269477784633636, 0, 0.963006675243378, 0), sensor_states={'rgb': SixDOFPose(position=array([-7.3699493,  1.3327618,  6.5762997], dtype=float32), rotation=quaternion(-0.269477784633636, 0, 0.963006675243378, 0)), 'depth': SixDOFPose(position=array([-7.3699493,  1.3327618,  6.5762997], dtype=float32), rotation=quaternion(-0.269477784633636, 0, 0.963006675243378, 0))})  
+def add_image_and_location(observations, env, img_path, json_path, episode_uuid):
+    #save img
+    image_uuid = str(uuid.uuid4())
+    image_name = image_uuid + ".png"
+    image_full_path = os.path.join(img_path, image_name)
+    cv2.imwrite(image_full_path, transform_rgb_bgr(observations["rgb"]))
 
-
-def from_json_to_state(json_path: str) -> AgentState:
-    with open(json_path, 'r') as json_file:
-        data = json.load(json_file)
+    #get agent position rotation
+    agent_state = env.sim.get_agent_state()
+    agent_position = agent_state.position.tolist()  # Convert to list for JSON serialization
+    agent_rotation = quaternion.as_float_array(agent_state.rotation).tolist()  # Quaternion
     
-    position = np.array(data['position'])
-    rotation = quaternion.quaternion(*data['rotation'])
+    # same to agent position
+    #rgb_position = agent_state.sensor_states["rgb"].position.tolist()
+    #rgb_rotation = quaternion.as_float_array(agent_state.sensor_states["rgb"].rotation).tolist()
+
+
+    json_full_path = os.path.join(json_path, episode_uuid + ".json")
+
+    with open(json_full_path, 'r') as f:
+        add_data = json.load(f)
     
-    sensor_states = {
-        sensor: SixDOFPose(
-            position=np.array(sensor_data['position']),
-            rotation=quaternion.quaternion(*sensor_data['rotation'])
-        )
-        for sensor, sensor_data in data['sensor_states'].items()
-    }
-    return AgentState(position=position, rotation=rotation, sensor_states=sensor_states)
+    add_data["goals"].append({
+        "position": agent_position,
+        "rotation": agent_rotation,
+        "radius": None
+    })
+    add_data["image_uuid"].append(image_uuid)
+    with open(json_full_path, 'w') as json_file:
+        json.dump(add_data, json_file)
+    return episode_uuid
+
+def switch_map(map_path, ramdom_map):
+    #os.remove('/home/marcus/workplace/habitat-lab/data/datasets/pointnav/hm3d/v1/train/train.json.gz')
+
+    #import ipdb; ipdb.set_trace()
+    with open(map_list_path, 'r') as f:
+        map_list = json.load(f)
+    map_name = random.choice(map_list) # map_name= '00190-NkvRYHk72vA'
+    
+    with open(map_path, 'r') as f:
+        data = json.load(f)
+    real_map = Path(data['episodes'][0]['scene_id'])
+    parts = real_map.parts
+    #import ipdb; ipdb.set_trace()
+    new_parts = parts[:-2] + (map_name,map_name.split('-')[1] + '.basis.glb')
+    new_path = Path(*new_parts)
+    data['episodes'][0]['scene_id'] = str(new_path)
+    
+    with open(map_path, 'w') as f:
+        json.dump(data, f)
+        
+    with open(map_path, 'rb') as f_in:
+        with gzip.open(map_path + '.gz', 'wb') as f_out:
+            shutil.copyfileobj(f_in, f_out)
+    
 
 def example():
+    new_episode = True
+    episode_uuid = -1
+
+    switch_map(map_path=map_path, ramdom_map=True)
+    config=habitat.get_config("benchmark/nav/pointnav/my_eqa_hm3d.yaml")
     env = habitat.Env(
-        config=habitat.get_config("benchmark/nav/pointnav/pointnav_habitat_test.yaml")
+        config
     )
     env.sim.get_agent_state
     #print("Environment creation successful")
@@ -152,8 +202,15 @@ def example():
         elif keystroke == ord(FINISH):
             action = HabitatSimActions.stop
             print("action: FINISH")
+        elif keystroke == ord(NEW_EPISODE):
+            new_episode = True
+            print("======New episode started!!!======")
         elif keystroke == ord(SAVE_KEY):
-            save_image_and_location(observations, env, img_save_path, json_save_path)
+            if new_episode == True:
+                new_episode = False
+                episode_uuid = save_image_and_location(observations, env, img_save_path, json_save_path)
+            else:
+                add_image_and_location(observations, env, img_save_path, json_save_path,episode_uuid)
             print("Image and location saved.",env.sim.get_agent_state())
             continue
         else:

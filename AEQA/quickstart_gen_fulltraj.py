@@ -135,11 +135,12 @@ def example():
         while not env.episode_over:
             #habitat_sim.nav.GreedyGeodesicFollower.find_path
             keystroke = cv2.waitKey(0)
-
             shortest_paths.append(env.sim.get_agent_state().position.tolist())
             shortest_paths.append(quaternion.as_float_array(env.sim.get_agent_state().rotation).tolist())
             #import ipdb; ipdb.set_trace()
-            print(shortest_paths)
+            print(env.sim.get_agent_state().position.tolist())
+            #print("shortest_paths",shortest_paths)
+
             #import ipdb; ipdb.set_trace()
             if keystroke == ord(FORWARD_KEY):
                 action = HabitatSimActions.move_forward
@@ -166,12 +167,13 @@ def example():
             #     observations["pointgoal_with_gps_compass"][0],
             #     observations["pointgoal_with_gps_compass"][1]))
             cv2.imshow("RGB", transform_rgb_bgr(observations["rgb"]))
-
+        import ipdb; ipdb.set_trace()
+        data['shortest_paths'] = shortest_paths
         with open(file_path, 'w') as f:
-            data['shortest_paths'] = shortest_paths
-            json.dump(data,f, indent=4)
+            json.dump(data, f, indent=4)
 
         print("Episode finished after {} steps.".format(count_steps))
+        print("json name:",file_path)
 
 
 if __name__ == "__main__":
