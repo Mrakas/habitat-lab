@@ -11,8 +11,16 @@ import random
 import time
 import sys
 from habitat.tasks.nav.shortest_path_follower import ShortestPathFollower
+"""
+#TODO
+json : 基于原本的dataset + 最后点的坐标 + 角度（需要换算） + 对应的QA
 
-img_save_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/test_full_path"
+func1 : 根据最后一点，生成全景图
+
+func2 ：Llava QA
+"""
+
+img_save_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/last_frame_test"
 def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
 
@@ -30,20 +38,23 @@ def full_episode_over(position, goal_position):
         return False
 
 SKIP_FRAME = 1 #多少帧采集一次图片
-END_IDX = 10 #多少条轨迹？
+START_IDX = 0
+END_IDX = 99999 #采集多少张图片
+
 def example():
     env = habitat.Env(
-        config=habitat.get_config("AEQA/vln_r2r_21.yaml")
+        config=habitat.get_config("/mnt/data5/ghx/workplace/habitat-lab/configs/tasks/vln_r2r.yaml")
     )
     #env.sim.get_agent_state()
     #env.seed(25)
-    
     follower = ShortestPathFollower(
         env.sim, goal_radius=0.5, return_one_hot=False
     )
     cnt = 0
     env.current_episode = env.episodes[0]
-    for _ in range(len(env.episodes[:END_IDX])):
+    print(f"save path: {img_save_path} \n \
+          total num: {len(env.episodes[START_IDX:END_IDX])}")
+    for _ in range(len(env.episodes[START_IDX:END_IDX])):
         env.reset()
         path = env.current_episode.reference_path + [
             env.current_episode.goals[0].position
@@ -51,7 +62,7 @@ def example():
         frame_step = 0
         print("start a new episode",env.current_episode.episode_id, "cnt:", cnt)
         cnt += 1
-        for point in path[1:]:
+        for point in path[1:]:#第一个point 和起点一样 skip
             
             while full_episode_over(env.sim.get_agent_state().position, path[-1]) == False:
                 
@@ -65,12 +76,20 @@ def example():
                 #动两次保存一次图片
                 if frame_step % SKIP_FRAME == 0:
                     #import ipdb; ipdb.set_trace()
-                    flag = save_image(epsode_id=env.current_episode.episode_id, \
+                    #flag = save_image(epsode_id=env.current_episode.episode_id, frame_id=frame_step, img_path=img_save_path, observations=obs)
+                    flag = True
+                    if flag == False:
+                        print("save image failed")
+                        return 0
+                frame_step += 1
+                #env.current_episode
+        flag = save_image(epsode_id=env.current_episode.episode_id, \
                           trajectory_id=env.current_episode.trajectory_id,  \
                             frame_id=frame_step, img_path=img_save_path, observations=obs)
-                frame_step += 1
-        #flag = save_image(epsode_id=env.current_episode.episode_id, frame_id=frame_step, img_path=img_save_path, observations=obs)
-        #import ipdb; ipdb.set_trace() 
+        if flag == False:
+            print("save image failed")
+            return 0
+        #import ipdb; ipdb.set_trace()
 
                 
 if __name__ == "__main__":

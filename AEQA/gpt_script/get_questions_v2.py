@@ -2,6 +2,7 @@ import os
 import base64
 import json
 from pathlib import Path
+import openai
 from openai import OpenAI
 import time
 from tqdm import tqdm
@@ -80,7 +81,7 @@ class OpenAIImageProcessor:
         print(f"Data successfully saved to {json_path}")
 
 qa_prompt = """
-    Please design seven questions based on the following template: only one question per type is needed.please return a json file for me:
+    Please design seven questions based on the picture and the following template: only one question per type is needed.please return a json file for me:
 "Functional reasoning":{
     "question": "Where can I put my hat?",
     "answer": "On the hat rack",
@@ -128,12 +129,12 @@ def main():
     # Configuration
     API_KEY = "sk-IxyZ12cYdsxsvUCnD31eC59aFc1546Df8378302237125401"
     BASE_URL = "https://api3.apifans.com/v1"
-    IMAGE_FOLDER = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/last_frame"
-    JSON_PATH = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/json/data.json"
+    IMAGE_FOLDER = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/last_frame_test"
+    JSON_PATH = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/json/QA_data_val_unseen.json"
     PROMPT = qa_prompt
     MODEL = "gpt-4o-2024-08-06"
     START_IDX = 0
-    END_IDX = 100
+    END_IDX = 2000
     # Init
     processor = OpenAIImageProcessor(api_key=API_KEY, base_url=BASE_URL)
 

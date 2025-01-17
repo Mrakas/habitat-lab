@@ -3,9 +3,9 @@ import json
 '''
 脚本得到的gpt4 response 还没有进行格式化，需要根据规则匹配对脚本进行清洗。
 '''
-json_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/json/data.json"
-
-with open(json_path, "r") as f:
+raw_json_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/json/raw_QA_data_val_unseen.json"
+save_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/json/QA_data_val_unseen.json"
+with open(raw_json_path, "r") as f:
     data = json.load(f)
 
 episode_dict = {}
@@ -30,7 +30,6 @@ for i, cur_data in enumerate(data):
 
     #import ipdb; ipdb.set_trace()
 
-save_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/json/processed_data.json"
 with open(save_path, "w") as f:
     json.dump(episode_dict, f)
 
