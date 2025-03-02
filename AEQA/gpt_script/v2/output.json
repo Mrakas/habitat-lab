@@ -1,0 +1,1815 @@
+[
+    {
+        "image_name": "t1043_f83.png",
+        "result": "\"question\": \"Does this home have a dedicated space for wine storage?\",  \n\"answer\": \"Yes, there is a wine cellar.\"",
+        "category": "world knowledge",
+        "question": "Does this home have a dedicated space for wine storage?",
+        "answer": "Yes, there is a wine cellar."
+    },
+    {
+        "image_name": "t1110_f48.png",
+        "result": "```json\n{\n  \"question\": \"What is the color of the walls in the room?\",\n  \"answer\": \"wooden/wood-tone\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the color of the walls in the room?",
+        "answer": "wooden/wood-tone"
+    },
+    {
+        "image_name": "t1116_f71.png",
+        "result": "\"question\": \"What is above the wooden cabinets in the back of the room?\",  \n\"answer\": \"Glass cabinet doors with stored glasses.\"",
+        "category": "spatial understanding",
+        "question": "What is above the wooden cabinets in the back of the room?",
+        "answer": "Glass cabinet doors with stored glasses."
+    },
+    {
+        "image_name": "t111_f76.png",
+        "result": "**Question**: What material is used for the ceiling beams?  \n**Answer**: Wood",
+        "category": "attribute recognition",
+        "question": "What material is used for the ceiling beams?",
+        "answer": "Wood"
+    },
+    {
+        "image_name": "t1154_f33.png",
+        "result": "```json\n{\n  \"question\": \"What is hanging on the wall in the living room?\",\n  \"answer\": \"A framed artwork\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is hanging on the wall in the living room?",
+        "answer": "A framed artwork"
+    },
+    {
+        "image_name": "t1181_f99.png",
+        "result": "```json\n{\n  \"question\": \"Is the cabinet door on the left open or closed?\",\n  \"answer\": \"closed\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the cabinet door on the left open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t1188_f75.png",
+        "result": "\"question\": \"What color are the rocking chairs?\",  \n\"answer\": \"black\"",
+        "category": "attribute recognition",
+        "question": "What color are the rocking chairs?",
+        "answer": "black"
+    },
+    {
+        "image_name": "t1202_f31.png",
+        "result": "\"question\": \"What is the color of the kitchen countertop?\",  \n\"answer\": \"green\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the kitchen countertop?",
+        "answer": "green"
+    },
+    {
+        "image_name": "t1206_f45.png",
+        "result": "\"question\": \"Are the doors leading to the balcony open or closed?\",  \n\"answer\": \"closed\"",
+        "category": "object state recognition",
+        "question": "Are the doors leading to the balcony open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t1242_f59.png",
+        "result": "```json\n{\n  \"question\": \"What is located at the end of the hallway?\",\n  \"answer\": \"a small table with a vase\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is located at the end of the hallway?",
+        "answer": "a small table with a vase"
+    },
+    {
+        "image_name": "t1257_f67.png",
+        "result": "\"question\": \"What is underneath the framed artwork on the wall?\",  \n\"answer\": \"A bench with a folded blanket on it.\"  ",
+        "category": "spatial understanding",
+        "question": "What is underneath the framed artwork on the wall?",
+        "answer": "A bench with a folded blanket on it."
+    },
+    {
+        "image_name": "t1333_f60.png",
+        "result": "\"question\": \"Where can I have a meal with multiple people?\",  \n\"answer\": \"At the dining table with chairs.\"  ",
+        "category": "functional reasoning",
+        "question": "Where can I have a meal with multiple people?",
+        "answer": "At the dining table with chairs."
+    },
+    {
+        "image_name": "t1357_f62.png",
+        "result": "\"question\": \"Is the door with the oval glass open or closed?\",  \n\"answer\": \"closed\"",
+        "category": "object state recognition",
+        "question": "Is the door with the oval glass open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t1358_f42.png",
+        "result": "\"question\": \"Is the door in the hallway open or closed?\",  \n\"answer\": \"open\"  ",
+        "category": "object state recognition",
+        "question": "Is the door in the hallway open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t1365_f36.png",
+        "result": "\"question\": \"What is to the right of the bathroom door?\",  \n\"answer\": \"A large painting.\"",
+        "category": "spatial understanding",
+        "question": "What is to the right of the bathroom door?",
+        "answer": "A large painting."
+    },
+    {
+        "image_name": "t1366_f75.png",
+        "result": "\"question\": \"Where can I get something to eat or cook?\",  \n\"answer\": \"From the kitchen cabinets or the refrigerator on the left.\"",
+        "category": "functional reasoning",
+        "question": "Where can I get something to eat or cook?",
+        "answer": "From the kitchen cabinets or the refrigerator on the left."
+    },
+    {
+        "image_name": "t139_f66.png",
+        "result": "\"question\": \"What is the color of the walls in the bedroom?\",  \n\"answer\": \"beige\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the walls in the bedroom?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t1407_f65.png",
+        "result": "\"question\": \"What pattern is on the bedspread?\",  \n\"answer\": \"patchwork pattern\"  ",
+        "category": "attribute recognition",
+        "question": "What pattern is on the bedspread?",
+        "answer": "patchwork pattern"
+    },
+    {
+        "image_name": "t1456_f51.png",
+        "result": "I'm sorry, but I cannot generate a question and answer based on the provided image. It appears to be completely black, making object recognition or interpreting the presence of any objects impossible.",
+        "category": "object recognition",
+        "question": "What is the lighting level in the environment?",
+        "answer": "dark."
+    },
+    {
+        "image_name": "t149_f61.png",
+        "result": "\"question\": \"Where is the column with the white base?\",  \n\"answer\": \"On the patio next to the outdoor greenery.\"",
+        "category": "object localization",
+        "question": "Where is the column with the white base?",
+        "answer": "On the patio next to the outdoor greenery."
+    },
+    {
+        "image_name": "t1563_f73.png",
+        "result": "\"question\": \"Is the ceiling in the hallway intact or damaged?\",  \n\"answer\": \"It is damaged\"",
+        "category": "object state recognition",
+        "question": "Is the ceiling in the hallway intact or damaged?",
+        "answer": "It is damaged"
+    },
+    {
+        "image_name": "t1623_f103.png",
+        "result": "```json\n{\n  \"question\": \"Where is the patio with the glass walls?\",\n  \"answer\": \"Adjacent to the outdoor area overlooking the field and trees.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the patio with the glass walls?",
+        "answer": "Adjacent to the outdoor area overlooking the field and trees."
+    },
+    {
+        "image_name": "t1707_f67.png",
+        "result": "\"question\": \"Are the windows on the right side of the room open or closed?\",  \n\"answer\": \"Open\"  ",
+        "category": "object state recognition",
+        "question": "Are the windows on the right side of the room open or closed?",
+        "answer": "Open"
+    },
+    {
+        "image_name": "t1726_f38.png",
+        "result": "**Question:** What is the material of the walls?  \n**Answer:** Wood",
+        "category": "attribute recognition",
+        "question": "What is the material of the walls?",
+        "answer": "Wood"
+    },
+    {
+        "image_name": "t1770_f52.png",
+        "result": "\"question\": \"Where can I look outside while staying indoors?\",  \n\"answer\": \"Through the glass window.\"",
+        "category": "functional reasoning",
+        "question": "Where can I look outside while staying indoors?",
+        "answer": "Through the glass window."
+    },
+    {
+        "image_name": "t1802_f72.png",
+        "result": "\"question\": \"What is the color of the dining chairs?\",  \n\"answer\": \"white\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the dining chairs?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t180_f65.png",
+        "result": "```json\n{\n  \"question\": \"What is the color of the curtains?\",\n  \"answer\": \"white\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the color of the curtains?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t1847_f43.png",
+        "result": "{\n  \"question\": \"What is in front of the bed?\",\n  \"answer\": \"a yellow bench\"\n}",
+        "category": "object recognition",
+        "question": "What is in front of the bed?",
+        "answer": "a yellow bench"
+    },
+    {
+        "image_name": "t185_f52.png",
+        "result": "\"question\": \"What is the color of the bar stools?\",  \n\"answer\": \"black\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the bar stools?",
+        "answer": "black"
+    },
+    {
+        "image_name": "t1883_f57.png",
+        "result": "```json\n{\n  \"question\": \"Are the drawers on the shelving unit open or closed?\",\n  \"answer\": \"closed\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Are the drawers on the shelving unit open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t1884_f86.png",
+        "result": "\"question\": \"Is there a place to check my outfit before going out in this home?\",  \n\"answer\": \"Yes, there is a mirror on the closet door.\"  ",
+        "category": "world knowledge",
+        "question": "Is there a place to check my outfit before going out in this home?",
+        "answer": "Yes, there is a mirror on the closet door."
+    },
+    {
+        "image_name": "t1916_f51.png",
+        "result": "\"question\": \"Can I relax outside on this property?\",  \n\"answer\": \"Yes, there is a rocking chair on the porch.\"",
+        "category": "world knowledge",
+        "question": "Can I relax outside on this property?",
+        "answer": "Yes, there is a rocking chair on the porch."
+    },
+    {
+        "image_name": "t1933_f60.png",
+        "result": "```json\n{\n  \"question\": \"What color are the walls of the room?\",\n  \"answer\": \"white and orange\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What color are the walls of the room?",
+        "answer": "white and orange"
+    },
+    {
+        "image_name": "t193_f75.png",
+        "result": "\"question\": \"Is the light above the staircase on or off?\",  \n\"answer\": \"on\"",
+        "category": "object state recognition",
+        "question": "Is the light above the staircase on or off?",
+        "answer": "on"
+    },
+    {
+        "image_name": "t1942_f63.png",
+        "result": "```json\n{\n  \"question\": \"What is on the windowsill?\",\n  \"answer\": \"a small black pot\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the windowsill?",
+        "answer": "a small black pot"
+    },
+    {
+        "image_name": "t1974_f36.png",
+        "result": "```json\n{\n  \"question\": \"Where can I walk to get to the other room?\",\n  \"answer\": \"Through the hallway opening on the left.\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I walk to get to the other room?",
+        "answer": "Through the hallway opening on the left."
+    },
+    {
+        "image_name": "t1985_f26.png",
+        "result": "\"question\": \"Is the seating area with the lounge chairs open to the outdoors?\",  \n\"answer\": \"Yes\"",
+        "category": "object state recognition",
+        "question": "Is the seating area with the lounge chairs open to the outdoors?",
+        "answer": "Yes"
+    },
+    {
+        "image_name": "t1990_f36.png",
+        "result": "```json\n{\n  \"question\": \"Where is the outdoor grill?\",\n  \"answer\": \"In the outdoor patio area with tiled flooring.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the outdoor grill?",
+        "answer": "In the outdoor patio area with tiled flooring."
+    },
+    {
+        "image_name": "t2021_f95.png",
+        "result": "**Question**: \"What can I use to decorate a corner in my house?\"  \n**Answer**: \"The tall plant in the black pot.\"",
+        "category": "functional reasoning",
+        "question": "\"What can I use to decorate a corner in my house?\"",
+        "answer": "\"The tall plant in the black pot.\""
+    },
+    {
+        "image_name": "t2049_f73.png",
+        "result": "\"question\": \"Where can I sit to relax?\",  \n\"answer\": \"On the gray couch by the open area.\"",
+        "category": "functional reasoning",
+        "question": "Where can I sit to relax?",
+        "answer": "On the gray couch by the open area."
+    },
+    {
+        "image_name": "t2059_f28.png",
+        "result": "\"question\": \"Where can I walk to reach the bedrooms?\",  \n\"answer\": \"Down the hallway past the open doors.\"",
+        "category": "functional reasoning",
+        "question": "Where can I walk to reach the bedrooms?",
+        "answer": "Down the hallway past the open doors."
+    },
+    {
+        "image_name": "t2062_f34.png",
+        "result": "```json\n{\n  \"question\": \"What is the color of the hallway walls?\",\n  \"answer\": \"beige\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the color of the hallway walls?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t2095_f50.png",
+        "result": "```json\n{\n  \"question\": \"Where can I host a formal gathering?\",\n  \"answer\": \"In the grand hall with ornate chairs and elegant decor.\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I host a formal gathering?",
+        "answer": "In the grand hall with ornate chairs and elegant decor."
+    },
+    {
+        "image_name": "t2176_f51.png",
+        "result": "\"question\": \"What is located at the end of the hallway?\",  \n\"answer\": \"a window\"",
+        "category": "object recognition",
+        "question": "What is located at the end of the hallway?",
+        "answer": "a window"
+    },
+    {
+        "image_name": "t2180_f52.png",
+        "result": "\"question\": \"How can I go downstairs?\",  \n\"answer\": \"The staircase.\"",
+        "category": "functional reasoning",
+        "question": "How can I go downstairs?",
+        "answer": "The staircase."
+    },
+    {
+        "image_name": "t2205_f42.png",
+        "result": "\"question\": \"What material are the walls made of?\",  \n\"answer\": \"wood\"",
+        "category": "attribute recognition",
+        "question": "What material are the walls made of?",
+        "answer": "wood"
+    },
+    {
+        "image_name": "t2234_f38.png",
+        "result": "```json\n{\n  \"question\": \"Where can I sit to relax in this room?\",\n  \"answer\": \"On the red couches\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I sit to relax in this room?",
+        "answer": "On the red couches"
+    },
+    {
+        "image_name": "t2235_f37.png",
+        "result": "\"question\": \"What is in front of the large windows?\",  \n\"answer\": \"A grand piano.\"",
+        "category": "spatial understanding",
+        "question": "What is in front of the large windows?",
+        "answer": "A grand piano."
+    },
+    {
+        "image_name": "t2240_f73.png",
+        "result": "```json\n{\n  \"question\": \"Is the glass sliding door open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the glass sliding door open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t2242_f38.png",
+        "result": "```json\n{\n  \"question\": \"Can I access the patio from this room?\",\n  \"answer\": \"Yes, through the sliding glass door.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Can I access the patio from this room?",
+        "answer": "Yes, through the sliding glass door."
+    },
+    {
+        "image_name": "t2248_f47.png",
+        "result": "```json\n{\n  \"question\": \"What color are the walls in the hallway?\",\n  \"answer\": \"wooden brown\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What color are the walls in the hallway?",
+        "answer": "wooden brown"
+    },
+    {
+        "image_name": "t2271_f52.png",
+        "result": "\"question\": \"Is the glass door to the office open or closed?\",  \n\"answer\": \"open\"",
+        "category": "object state recognition",
+        "question": "Is the glass door to the office open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t2302_f34.png",
+        "result": "```json\n{\n  \"question\": \"What is in between the open door and the closed door on the left wall?\",\n  \"answer\": \"A wall sconce.\"\n}\n```",
+        "category": "spatial understanding",
+        "question": "What is in between the open door and the closed door on the left wall?",
+        "answer": "A wall sconce."
+    },
+    {
+        "image_name": "t2307_f51.png",
+        "result": "```json\n{\n  \"question\": \"Can I look down into the living room from this hallway?\",\n  \"answer\": \"Yes, the hallway overlooks the living room.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Can I look down into the living room from this hallway?",
+        "answer": "Yes, the hallway overlooks the living room."
+    },
+    {
+        "image_name": "t2327_f45.png",
+        "result": "\"question\": \"Where can I prepare food?\",  \n\"answer\": \"On the kitchen counters or kitchen island.\"",
+        "category": "functional reasoning",
+        "question": "Where can I prepare food?",
+        "answer": "On the kitchen counters or kitchen island."
+    },
+    {
+        "image_name": "t2328_f50.png",
+        "result": "\"question\": \"What is located near the stairs?\",  \n\"answer\": \"A lamp and chairs\"",
+        "category": "object recognition",
+        "question": "What is located near the stairs?",
+        "answer": "A lamp and chairs"
+    },
+    {
+        "image_name": "t2329_f30.png",
+        "result": "\"question\": \"What is in between the two wooden doors in the center of the image?\",  \n\"answer\": \"A view of the outside.\"",
+        "category": "spatial understanding",
+        "question": "What is in between the two wooden doors in the center of the image?",
+        "answer": "A view of the outside."
+    },
+    {
+        "image_name": "t2367_f54.png",
+        "result": "\"question\": \"What is in the small hallway?\",  \n\"answer\": \"A decorative vase with plants\"",
+        "category": "object recognition",
+        "question": "What is in the small hallway?",
+        "answer": "A decorative vase with plants"
+    },
+    {
+        "image_name": "t2392_f68.png",
+        "result": "\"question\": \"Where is the exercise bike?\",  \n\"answer\": \"In the hallway next to the mirror.\"  ",
+        "category": "object localization",
+        "question": "Where is the exercise bike?",
+        "answer": "In the hallway next to the mirror."
+    },
+    {
+        "image_name": "t2470_f40.png",
+        "result": "\"question\": \"Where can I find a globe to look at maps?\",  \n\"answer\": \"On the wooden counter near the windows.\"  ",
+        "category": "functional reasoning",
+        "question": "Where can I find a globe to look at maps?",
+        "answer": "On the wooden counter near the windows."
+    },
+    {
+        "image_name": "t2473_f83.png",
+        "result": "\"question\": \"What is the color of the bed pillows?\",  \n\"answer\": \"blue\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the bed pillows?",
+        "answer": "blue"
+    },
+    {
+        "image_name": "t2475_f110.png",
+        "result": "\"question\": \"Where is the beige armchair?\",  \n\"answer\": \"In the bedroom next to the nightstand.\"",
+        "category": "object localization",
+        "question": "Where is the beige armchair?",
+        "answer": "In the bedroom next to the nightstand."
+    },
+    {
+        "image_name": "t2488_f49.png",
+        "result": "\"question\": \"What is above the counter in the image?\",  \n\"answer\": \"Open shelves\"  ",
+        "category": "object recognition",
+        "question": "What is above the counter in the image?",
+        "answer": "Open shelves"
+    },
+    {
+        "image_name": "t251_f55.png",
+        "result": "\"question\": \"What can I use to decorate my wall?\",  \n\"answer\": \"The large abstract painting leaning against the wall.\"",
+        "category": "functional reasoning",
+        "question": "What can I use to decorate my wall?",
+        "answer": "The large abstract painting leaning against the wall."
+    },
+    {
+        "image_name": "t2549_f74.png",
+        "result": "\"question\": \"Where can I relax in water?\",  \n\"answer\": \"In the hot tub on the deck.\"",
+        "category": "functional reasoning",
+        "question": "Where can I relax in water?",
+        "answer": "In the hot tub on the deck."
+    },
+    {
+        "image_name": "t2603_f51.png",
+        "result": "\"question\": \"What is to the right of the open hallway in the image?\",  \n\"answer\": \"A large white pillar\"",
+        "category": "spatial understanding",
+        "question": "What is to the right of the open hallway in the image?",
+        "answer": "A large white pillar"
+    },
+    {
+        "image_name": "t2606_f58.png",
+        "result": "```json\n{\n  \"question\": \"What is the material of the walls?\",\n  \"answer\": \"stone\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the material of the walls?",
+        "answer": "stone"
+    },
+    {
+        "image_name": "t2616_f43.png",
+        "result": "```json\n{\n  \"question\": \"Where is the decorative fan located?\",\n  \"answer\": \"On the wall above the massage table in the spa room.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the decorative fan located?",
+        "answer": "On the wall above the massage table in the spa room."
+    },
+    {
+        "image_name": "t2644_f50.png",
+        "result": "\"question\": \"Where is the wall with graffiti art?\",  \n\"answer\": \"In the corner of the room with the wooden floor.\"  ",
+        "category": "object localization",
+        "question": "Where is the wall with graffiti art?",
+        "answer": "In the corner of the room with the wooden floor."
+    },
+    {
+        "image_name": "t2648_f31.png",
+        "result": "```json\n{\n  \"question\": \"Where is the projector screen?\",\n  \"answer\": \"In the home theater room.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the projector screen?",
+        "answer": "In the home theater room."
+    },
+    {
+        "image_name": "t2661_f93.png",
+        "result": "```json\n{\n  \"question\": \"Where is the bathtub located?\",\n  \"answer\": \"In the bathroom next to the window\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the bathtub located?",
+        "answer": "In the bathroom next to the window"
+    },
+    {
+        "image_name": "t2684_f43.png",
+        "result": "\"question\": \"Where is the decorative plant?\",  \n\"answer\": \"On the bathroom counter next to the sink.\"  ",
+        "category": "object localization",
+        "question": "Where is the decorative plant?",
+        "answer": "On the bathroom counter next to the sink."
+    },
+    {
+        "image_name": "t2692_f41.png",
+        "result": "```json\n{\n  \"question\": \"What is on the wall in front of the hallway?\",\n  \"answer\": \"Closet doors\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the wall in front of the hallway?",
+        "answer": "Closet doors"
+    },
+    {
+        "image_name": "t2737_f49.png",
+        "result": "```json\n{\n  \"question\": \"Does this room have natural lighting?\",\n  \"answer\": \"Yes, through the stained glass ceiling.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Does this room have natural lighting?",
+        "answer": "Yes, through the stained glass ceiling."
+    },
+    {
+        "image_name": "t2754_f59.png",
+        "result": "```json\n{\n  \"question\": \"Where is the white sink with a mirror?\",\n  \"answer\": \"In the bathroom next to the hallway.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the white sink with a mirror?",
+        "answer": "In the bathroom next to the hallway."
+    },
+    {
+        "image_name": "t2780_f34.png",
+        "result": "\"question\": \"What is on the left near the archway?\",  \n\"answer\": \"a grand piano\"",
+        "category": "object recognition",
+        "question": "What is on the left near the archway?",
+        "answer": "a grand piano"
+    },
+    {
+        "image_name": "t2786_f79.png",
+        "result": "```json\n{\n  \"question\": \"Where can I display an art piece?\",\n  \"answer\": \"On the wall next to the windows.\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I display an art piece?",
+        "answer": "On the wall next to the windows."
+    },
+    {
+        "image_name": "t2818_f81.png",
+        "result": "```json\n{\n  \"question\": \"What is in the space between the two wooden wine racks on the wall?\",\n  \"answer\": \"A glass wall and a tripod\"\n}\n```",
+        "category": "spatial understanding",
+        "question": "What is in the space between the two wooden wine racks on the wall?",
+        "answer": "A glass wall and a tripod"
+    },
+    {
+        "image_name": "t2828_f77.png",
+        "result": "\"question\": \"Where are the ornate columns located?\",  \n\"answer\": \"On the balcony overlooking the garden.\"  ",
+        "category": "object localization",
+        "question": "Where are the ornate columns located?",
+        "answer": "On the balcony overlooking the garden."
+    },
+    {
+        "image_name": "t2852_f66.png",
+        "result": "```json\n{\n  \"question\": \"What is above the staircase railing?\",\n  \"answer\": \"The slanted ceiling with exposed beams.\"\n}\n```",
+        "category": "spatial understanding",
+        "question": "What is above the staircase railing?",
+        "answer": "The slanted ceiling with exposed beams."
+    },
+    {
+        "image_name": "t2899_f61.png",
+        "result": "\"question\": \"Where can I display a presentation?\",  \n\"answer\": \"On the projected wall in front of the room.\"",
+        "category": "functional reasoning",
+        "question": "Where can I display a presentation?",
+        "answer": "On the projected wall in front of the room."
+    },
+    {
+        "image_name": "t2956_f27.png",
+        "result": "\"question\": \"What is above the stairs in the stairwell?\"  \n\"answer\": \"A window\"  ",
+        "category": "spatial understanding",
+        "question": "What is above the stairs in the stairwell?",
+        "answer": "A window"
+    },
+    {
+        "image_name": "t2979_f54.png",
+        "result": "\"question\": \"Where is the red dresser?\",  \n\"answer\": \"In the room beside the hallway leading to the bathroom.\"",
+        "category": "object localization",
+        "question": "Where is the red dresser?",
+        "answer": "In the room beside the hallway leading to the bathroom."
+    },
+    {
+        "image_name": "t3035_f56.png",
+        "result": "```json\n{\n  \"question\": \"What color are the walls in the staircase area?\",\n  \"answer\": \"white\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What color are the walls in the staircase area?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t3107_f63.png",
+        "result": "\"question\": \"What color are the hallway walls?\",  \n\"answer\": \"beige\"  ",
+        "category": "attribute recognition",
+        "question": "What color are the hallway walls?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t3143_f52.png",
+        "result": "```json\n{\n  \"question\": \"Is the glass window open or closed?\",\n  \"answer\": \"closed\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the glass window open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t3190_f63.png",
+        "result": "```json\n{\n  \"question\": \"Where is the bed made of logs?\",\n  \"answer\": \"In the wooden bedroom with the slanted ceiling\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the bed made of logs?",
+        "answer": "In the wooden bedroom with the slanted ceiling"
+    },
+    {
+        "image_name": "t3228_f45.png",
+        "result": "```json\n{\n  \"question\": \"What is the furniture in the living area?\",\n  \"answer\": \"A tufted sofa\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is the furniture in the living area?",
+        "answer": "A tufted sofa"
+    },
+    {
+        "image_name": "t3242_f37.png",
+        "result": "\"question\": \"What is above the sink in the bathroom?\",  \n\"answer\": \"A mirror\"",
+        "category": "spatial understanding",
+        "question": "What is above the sink in the bathroom?",
+        "answer": "A mirror"
+    },
+    {
+        "image_name": "t3250_f45.png",
+        "result": "\"question\": \"Are the closet drawers closed or open?\",  \n\"answer\": \"Closed\"  ",
+        "category": "object state recognition",
+        "question": "Are the closet drawers closed or open?",
+        "answer": "Closed"
+    },
+    {
+        "image_name": "t3252_f36.png",
+        "result": "\"question\": \"What is in front of the large window?\",  \n\"answer\": \"A decorative table.\"",
+        "category": "spatial understanding",
+        "question": "What is in front of the large window?",
+        "answer": "A decorative table."
+    },
+    {
+        "image_name": "t3257_f74.png",
+        "result": "\"question\": \"What is the color of the arched ceiling?\",   \n\"answer\": \"brown\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the arched ceiling?",
+        "answer": "brown"
+    },
+    {
+        "image_name": "t3297_f36.png",
+        "result": "```json\n{\n  \"question\": \"What is located on the counter in the room to the left?\",\n  \"answer\": \"baskets and decorations\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is located on the counter in the room to the left?",
+        "answer": "baskets and decorations"
+    },
+    {
+        "image_name": "t3382_f61.png",
+        "result": "\"question\": \"What is the color of the pillar?\",  \n\"answer\": \"white\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the pillar?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t3387_f60.png",
+        "result": "\"question\": \"Where can I display decorative items?\",  \n\"answer\": \"On the wooden cabinet with glass doors and shelves.\"  ",
+        "category": "functional reasoning",
+        "question": "Where can I display decorative items?",
+        "answer": "On the wooden cabinet with glass doors and shelves."
+    },
+    {
+        "image_name": "t339_f65.png",
+        "result": "\"question\": \"Where can I sit to have a formal conversation?\",  \n\"answer\": \"The chairs in the room with red curtains and decorative furniture.\"  ",
+        "category": "functional reasoning",
+        "question": "Where can I sit to have a formal conversation?",
+        "answer": "The chairs in the room with red curtains and decorative furniture."
+    },
+    {
+        "image_name": "t3474_f48.png",
+        "result": "\"question\": \"What is in front of the fireplace in the room?\",  \n\"answer\": \"A coffee table.\"",
+        "category": "spatial understanding",
+        "question": "What is in front of the fireplace in the room?",
+        "answer": "A coffee table."
+    },
+    {
+        "image_name": "t3488_f51.png",
+        "result": "```json\n{\n  \"question\": \"What is located in the center of the room?\",\n  \"answer\": \"a round wooden table\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is located in the center of the room?",
+        "answer": "a round wooden table"
+    },
+    {
+        "image_name": "t3513_f64.png",
+        "result": "\"question\": \"Is the fireplace lit or unlit?\",  \n\"answer\": \"lit\"  ",
+        "category": "object state recognition",
+        "question": "Is the fireplace lit or unlit?",
+        "answer": "lit"
+    },
+    {
+        "image_name": "t3514_f58.png",
+        "result": "```json\n{\n  \"question\": \"What is next to the tiled wall on the left?\",\n  \"answer\": \"Wooden cabinets\"\n}\n```",
+        "category": "spatial understanding",
+        "question": "What is next to the tiled wall on the left?",
+        "answer": "Wooden cabinets"
+    },
+    {
+        "image_name": "t355_f76.png",
+        "result": "\"question\": \"Is this a suitable place to buy refreshments?\",  \n\"answer\": \"Yes, there is a cafe counter visible.\"",
+        "category": "world knowledge",
+        "question": "Is this a suitable place to buy refreshments?",
+        "answer": "Yes, there is a cafe counter visible."
+    },
+    {
+        "image_name": "t356_f79.png",
+        "result": "\"question\": \"What is directly in front of the tiled wall?\",  \n\"answer\": \"Wooden cabinets.\"  ",
+        "category": "spatial understanding",
+        "question": "What is directly in front of the tiled wall?",
+        "answer": "Wooden cabinets."
+    },
+    {
+        "image_name": "t3590_f50.png",
+        "result": "\"question\": \"What is in between the TV and the window?\",  \n\"answer\": \"A small table with items on it.\"",
+        "category": "spatial understanding",
+        "question": "What is in between the TV and the window?",
+        "answer": "A small table with items on it."
+    },
+    {
+        "image_name": "t3692_f71.png",
+        "result": "```json\n{\n  \"question\": \"Where is this empty room located?\",\n  \"answer\": \"Behind the white door.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is this empty room located?",
+        "answer": "Behind the white door."
+    },
+    {
+        "image_name": "t3705_f36.png",
+        "result": "\"question\": \"Are the skylight windows open or closed?\",  \n\"answer\": \"closed\"",
+        "category": "object state recognition",
+        "question": "Are the skylight windows open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t3755_f70.png",
+        "result": "\"Question\": \"What is the color of the brick walls?\",  \n\"Answer\": \"beige\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the brick walls?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t37_f69.png",
+        "result": "```json\n{\n  \"question\": \"What is located on the wooden floor near the rug?\",\n  \"answer\": \"a leather chair\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is located on the wooden floor near the rug?",
+        "answer": "a leather chair"
+    },
+    {
+        "image_name": "t3813_f43.png",
+        "result": "```json\n{\n  \"question\": \"What is located on the floor near the wall?\",\n  \"answer\": \"a white hoop with an orange net\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is located on the floor near the wall?",
+        "answer": "a white hoop with an orange net"
+    },
+    {
+        "image_name": "t3816_f55.png",
+        "result": "```json\n{\n  \"question\": \"What is the dominant color in the artwork?\",\n  \"answer\": \"blue\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the dominant color in the artwork?",
+        "answer": "blue"
+    },
+    {
+        "image_name": "t3821_f92.png",
+        "result": "```json\n{\n  \"question\": \"Is the sliding glass door open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the sliding glass door open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t3870_f67.png",
+        "result": "\"question\": \"What is located on the desk?\",  \n\"answer\": \"a desk lamp and a phone\"",
+        "category": "object recognition",
+        "question": "What is located on the desk?",
+        "answer": "a desk lamp and a phone"
+    },
+    {
+        "image_name": "t3898_f52.png",
+        "result": "\"question\": \"Where is the black armchair with a red cushion?\",  \n\"answer\": \"On the patio near the door.\"  ",
+        "category": "object localization",
+        "question": "Where is the black armchair with a red cushion?",
+        "answer": "On the patio near the door."
+    },
+    {
+        "image_name": "t3901_f75.png",
+        "result": "```json\n{\n  \"question\": \"Is the patio area safe for children to play?\",\n  \"answer\": \"Yes, it is enclosed by a fence.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Is the patio area safe for children to play?",
+        "answer": "Yes, it is enclosed by a fence."
+    },
+    {
+        "image_name": "t3923_f46.png",
+        "result": "\"question\": \"Where is the white closet?\",  \n\"answer\": \"At the end of the hallway upstairs.\"",
+        "category": "object localization",
+        "question": "Where is the white closet?",
+        "answer": "At the end of the hallway upstairs."
+    },
+    {
+        "image_name": "t3938_f58.png",
+        "result": "\"question\": \"Is the wooden door at the end of the hallway open or closed?\",  \n\"answer\": \"closed\"",
+        "category": "object state recognition",
+        "question": "Is the wooden door at the end of the hallway open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t3967_f77.png",
+        "result": "\"question\": \"Are the windows in the room open or closed?\",  \n\"answer\": \"open\"  ",
+        "category": "object state recognition",
+        "question": "Are the windows in the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t3976_f42.png",
+        "result": "\"question\": \"What is above the tiled floor in the image?\",  \n\"answer\": \"A wooden ceiling.\"",
+        "category": "spatial understanding",
+        "question": "What is above the tiled floor in the image?",
+        "answer": "A wooden ceiling."
+    },
+    {
+        "image_name": "t3977_f89.png",
+        "result": "```json\n{\n  \"question\": \"Is the lid of the bathtub open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the lid of the bathtub open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t3980_f73.png",
+        "result": "\"question\": \"What is the color of the ceiling?\",  \n\"answer\": \"brown\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the ceiling?",
+        "answer": "brown"
+    },
+    {
+        "image_name": "t3982_f56.png",
+        "result": "\"question\": \"What is the color of the shelves?\",  \n\"answer\": \"wooden brown\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the shelves?",
+        "answer": "wooden brown"
+    },
+    {
+        "image_name": "t4020_f67.png",
+        "result": "```json\n{\n  \"question\": \"What is located next to the armchair in the room?\",\n  \"answer\": \"A small table with plants\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is located next to the armchair in the room?",
+        "answer": "A small table with plants"
+    },
+    {
+        "image_name": "t4024_f69.png",
+        "result": "\"question\": \"What is on the nightstand next to the bed?\",  \n\"answer\": \"A picture frame and some papers\"",
+        "category": "object recognition",
+        "question": "What is on the nightstand next to the bed?",
+        "answer": "A picture frame and some papers"
+    },
+    {
+        "image_name": "t4087_f64.png",
+        "result": "```json\n{\n  \"question\": \"Where is the treadmill?\",\n  \"answer\": \"In the room with the wooden shelves and exercise equipment.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the treadmill?",
+        "answer": "In the room with the wooden shelves and exercise equipment."
+    },
+    {
+        "image_name": "t408_f45.png",
+        "result": "\"question\": \"Can I stay warm in this bedroom during the winter?\",  \n\"answer\": \"Yes, there's a fireplace and heater.\"",
+        "category": "world knowledge",
+        "question": "Can I stay warm in this bedroom during the winter?",
+        "answer": "Yes, there's a fireplace and heater."
+    },
+    {
+        "image_name": "t4124_f51.png",
+        "result": "```json\n{\n  \"question\": \"What is on the floor at the center of the room?\",\n  \"answer\": \"a broken table\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the floor at the center of the room?",
+        "answer": "a broken table"
+    },
+    {
+        "image_name": "t4137_f52.png",
+        "result": "\"question\": \"Can I work on my laptop in this room?\",  \n\"answer\": \"Yes, there is a table and chair available.\"",
+        "category": "world knowledge",
+        "question": "Can I work on my laptop in this room?",
+        "answer": "Yes, there is a table and chair available."
+    },
+    {
+        "image_name": "t4180_f73.png",
+        "result": "\"question\": \"What is located above the staircase?\",  \n\"answer\": \"A glass railing.\"",
+        "category": "object recognition",
+        "question": "What is located above the staircase?",
+        "answer": "A glass railing."
+    },
+    {
+        "image_name": "t4183_f30.png",
+        "result": "```json\n{\n  \"question\": \"Is the window above the bed open to let in light?\",\n  \"answer\": \"Yes\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the window above the bed open to let in light?",
+        "answer": "Yes"
+    },
+    {
+        "image_name": "t4278_f75.png",
+        "result": "**Question**: \"Where can I dry my hands after washing them?\"  \n**Answer**: \"There are tissues available on the counter.\"",
+        "category": "world knowledge",
+        "question": "\"Where can I dry my hands after washing them?\"",
+        "answer": "\"There are tissues available on the counter.\""
+    },
+    {
+        "image_name": "t4301_f57.png",
+        "result": "**Question:** Where can I hold a formal gathering?  \n**Answer:** In the elegant room with the patterned wooden floor and ornate railing.",
+        "category": "functional reasoning",
+        "question": "Where can I hold a formal gathering?",
+        "answer": "In the elegant room with the patterned wooden floor and ornate railing."
+    },
+    {
+        "image_name": "t4302_f40.png",
+        "result": "\"question\": \"What is visible outside the window?\",  \n\"answer\": \"Trees.\"",
+        "category": "spatial understanding",
+        "question": "What is visible outside the window?",
+        "answer": "Trees."
+    },
+    {
+        "image_name": "t4345_f79.png",
+        "result": "```json\n{\n  \"question\": \"Where is the bed with the blue bedding?\",\n  \"answer\": \"In the bedroom with the wooden flooring and large window.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the bed with the blue bedding?",
+        "answer": "In the bedroom with the wooden flooring and large window."
+    },
+    {
+        "image_name": "t4357_f66.png",
+        "result": "\"question\": \"What color are the living room walls?\",  \n\"answer\": \"beige\"",
+        "category": "attribute recognition",
+        "question": "What color are the living room walls?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t4395_f64.png",
+        "result": "\"question\": \"Can I dry my hands after washing them in this bathroom?\",  \n\"answer\": \"Yes, there is a hand towel on the wall.\"  ",
+        "category": "world knowledge",
+        "question": "Can I dry my hands after washing them in this bathroom?",
+        "answer": "Yes, there is a hand towel on the wall."
+    },
+    {
+        "image_name": "t4426_f52.png",
+        "result": "Here is a spatial understanding question and answer derived from the image:\n\n\"question\": \"What is next to the bookshelf on the left side of the image?\",  \n\"answer\": \"A stool.\"  ",
+        "category": "spatial understanding",
+        "question": "What is next to the bookshelf on the left side of the image?",
+        "answer": "A stool."
+    },
+    {
+        "image_name": "t4481_f51.png",
+        "result": "\"question\": \"Where can I read a book?\",  \n\"answer\": \"At the table near the window.\"",
+        "category": "functional reasoning",
+        "question": "Where can I read a book?",
+        "answer": "At the table near the window."
+    },
+    {
+        "image_name": "t4554_f70.png",
+        "result": "\"question\": \"Where can I sit to relax and enjoy the view?\",  \n\"answer\": \"On the outdoor lounge chairs next to the glass wall.\"",
+        "category": "functional reasoning",
+        "question": "Where can I sit to relax and enjoy the view?",
+        "answer": "On the outdoor lounge chairs next to the glass wall."
+    },
+    {
+        "image_name": "t4616_f68.png",
+        "result": "```json\n{\n  \"question\": \"What is on the bed in the next room?\",\n  \"answer\": \"colorful pillows and an orange blanket\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the bed in the next room?",
+        "answer": "colorful pillows and an orange blanket"
+    },
+    {
+        "image_name": "t4619_f67.png",
+        "result": "**Question:** Where can I sit to work or read in this room?  \n**Answer:** On the two gray chairs near the small glass table.  ",
+        "category": "functional reasoning",
+        "question": "Where can I sit to work or read in this room?",
+        "answer": "On the two gray chairs near the small glass table."
+    },
+    {
+        "image_name": "t4697_f56.png",
+        "result": "```json\n{\n  \"question\": \"Where is the white mirror?\",\n  \"answer\": \"On the wall in the dining area.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the white mirror?",
+        "answer": "On the wall in the dining area."
+    },
+    {
+        "image_name": "t4704_f48.png",
+        "result": "\"question\": \"What is located next to the bathtub?\",  \n\"answer\": \"A black curtain\"",
+        "category": "object recognition",
+        "question": "What is located next to the bathtub?",
+        "answer": "A black curtain"
+    },
+    {
+        "image_name": "t4762_f87.png",
+        "result": "```json\n{\n  \"question\": \"What is hanging on the right wall?\",\n  \"answer\": \"A white towel\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is hanging on the right wall?",
+        "answer": "A white towel"
+    },
+    {
+        "image_name": "t4765_f87.png",
+        "result": "\"question\": \"Where can I sit to relax in this room?\",  \n\"answer\": \"On the blue sofas and chairs.\"",
+        "category": "functional reasoning",
+        "question": "Where can I sit to relax in this room?",
+        "answer": "On the blue sofas and chairs."
+    },
+    {
+        "image_name": "t4780_f56.png",
+        "result": "\"question\": \"Where can I check my reflection?\",  \n\"answer\": \"In the mirrors above the wooden tables.\"",
+        "category": "functional reasoning",
+        "question": "Where can I check my reflection?",
+        "answer": "In the mirrors above the wooden tables."
+    },
+    {
+        "image_name": "t4784_f79.png",
+        "result": "\"question\": \"What is above the hanging shirts?\",  \n\"answer\": \"Wooden shelves\"",
+        "category": "spatial understanding",
+        "question": "What is above the hanging shirts?",
+        "answer": "Wooden shelves"
+    },
+    {
+        "image_name": "t480_f40.png",
+        "result": "\"question\": \"Are the walls made of wood?\",  \n\"answer\": \"Yes.\"",
+        "category": "world knowledge",
+        "question": "Are the walls made of wood?",
+        "answer": "Yes."
+    },
+    {
+        "image_name": "t4884_f84.png",
+        "result": "\"question\": \"What is in between the two doorways on the back wall?\",  \n\"answer\": \"A mirror.\"",
+        "category": "spatial understanding",
+        "question": "What is in between the two doorways on the back wall?",
+        "answer": "A mirror."
+    },
+    {
+        "image_name": "t4919_f47.png",
+        "result": "\"question\": \"What color are the hallway walls?\",  \n\"answer\": \"white\"",
+        "category": "attribute recognition",
+        "question": "What color are the hallway walls?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t4964_f73.png",
+        "result": "\"question\": \"Where can I place a flower vase?\",  \n\"answer\": \"On the round table in the center of the room.\"",
+        "category": "functional reasoning",
+        "question": "Where can I place a flower vase?",
+        "answer": "On the round table in the center of the room."
+    },
+    {
+        "image_name": "t4965_f50.png",
+        "result": "```json\n{\n  \"question\": \"Is the glass door to the room open or closed?\",\n  \"answer\": \"closed\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the glass door to the room open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t4975_f45.png",
+        "result": "\"question\": \"Where can I wash dishes?\",  \n\"answer\": \"In the sink on the counter.\"",
+        "category": "functional reasoning",
+        "question": "Where can I wash dishes?",
+        "answer": "In the sink on the counter."
+    },
+    {
+        "image_name": "t5021_f61.png",
+        "result": "```json\n{\n  \"question\": \"Can I dry my hands after washing them in this bathroom?\",\n  \"answer\": \"Yes, there are towels on the rack.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Can I dry my hands after washing them in this bathroom?",
+        "answer": "Yes, there are towels on the rack."
+    },
+    {
+        "image_name": "t5048_f93.png",
+        "result": "\"question\": \"What is to the left of the staircase?\",  \n\"answer\": \"The living room area with couches and a coffee table.\"",
+        "category": "spatial understanding",
+        "question": "What is to the left of the staircase?",
+        "answer": "The living room area with couches and a coffee table."
+    },
+    {
+        "image_name": "t5051_f78.png",
+        "result": "```json\n{\n  \"question\": \"What is the object located above the fireplace?\",\n  \"answer\": \"a mirror\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is the object located above the fireplace?",
+        "answer": "a mirror"
+    },
+    {
+        "image_name": "t5057_f43.png",
+        "result": "\"question\": \"What is on the wall in the hallway?\",  \n\"answer\": \"Artwork and posters\"",
+        "category": "object recognition",
+        "question": "What is on the wall in the hallway?",
+        "answer": "Artwork and posters"
+    },
+    {
+        "image_name": "t5076_f26.png",
+        "result": "```json\n\"question\": \"Does this house have a rustic style?\",  \n\"answer\": \"Yes, it features wooden beams and a stone fireplace.\"\n```",
+        "category": "world knowledge",
+        "question": "Does this house have a rustic style?",
+        "answer": "Yes, it features wooden beams and a stone fireplace."
+    },
+    {
+        "image_name": "t5098_f38.png",
+        "result": "```json\n{\n  \"question\": \"What is on the chair on the balcony?\",\n  \"answer\": \"A striped pillow\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the chair on the balcony?",
+        "answer": "A striped pillow"
+    },
+    {
+        "image_name": "t5104_f37.png",
+        "result": "\"question\": \"Where can I sit and relax in this space?\",  \n\"answer\": \"On the blue couch or the brown chairs.\"",
+        "category": "functional reasoning",
+        "question": "Where can I sit and relax in this space?",
+        "answer": "On the blue couch or the brown chairs."
+    },
+    {
+        "image_name": "t5169_f66.png",
+        "result": "\"question\": \"What can I use to block sunlight from entering the room?\",  \n\"answer\": \"The beige roller blind\".",
+        "category": "functional reasoning",
+        "question": "What can I use to block sunlight from entering the room?",
+        "answer": "The beige roller blind"
+    },
+    {
+        "image_name": "t5177_f57.png",
+        "result": "\"question\": \"What is located on the bathroom counter?\",  \n\"answer\": \"a sink\".  ",
+        "category": "object recognition",
+        "question": "What is located on the bathroom counter?",
+        "answer": "a sink"
+    },
+    {
+        "image_name": "t5181_f58.png",
+        "result": "```json\n{\n  \"question\": \"Does this kitchen have natural lighting?\",\n  \"answer\": \"Yes, there is a stained glass window that lets in light.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Does this kitchen have natural lighting?",
+        "answer": "Yes, there is a stained glass window that lets in light."
+    },
+    {
+        "image_name": "t519_f94.png",
+        "result": "\"question\": \"What is between the bed and the white storage bench?\",  \n\"answer\": \"The floor.\"  ",
+        "category": "spatial understanding",
+        "question": "What is between the bed and the white storage bench?",
+        "answer": "The floor."
+    },
+    {
+        "image_name": "t5200_f31.png",
+        "result": "```json\n{\n  \"question\": \"Is the window in the room open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the window in the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t5231_f93.png",
+        "result": "\"question\": \"How can I go outside from here?\",  \n\"answer\": \"Use the double glass doors.\"",
+        "category": "functional reasoning",
+        "question": "How can I go outside from here?",
+        "answer": "Use the double glass doors."
+    },
+    {
+        "image_name": "t5241_f54.png",
+        "result": "\"question\": \"What is located in the passageway?\",\n\"answer\": \"Stone floor\"",
+        "category": "object recognition",
+        "question": "What is located in the passageway?",
+        "answer": "Stone floor"
+    },
+    {
+        "image_name": "t5305_f62.png",
+        "result": "```json\n{\n  \"question\": \"What color are the walls of the bedroom?\",\n  \"answer\": \"beige\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What color are the walls of the bedroom?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t5350_f66.png",
+        "result": "\"question\": \"What is the color of the wooden paneling?\",  \n\"answer\": \"brown\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the wooden paneling?",
+        "answer": "brown"
+    },
+    {
+        "image_name": "t5351_f43.png",
+        "result": "```json\n{\n  \"question\": \"Is the door on the right fully open or partially open?\",\n  \"answer\": \"Partially open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the door on the right fully open or partially open?",
+        "answer": "Partially open"
+    },
+    {
+        "image_name": "t5354_f75.png",
+        "result": "\"question\": \"Where can I take a relaxing bath?\",  \n\"answer\": \"In the bathtub next to the window.\"",
+        "category": "functional reasoning",
+        "question": "Where can I take a relaxing bath?",
+        "answer": "In the bathtub next to the window."
+    },
+    {
+        "image_name": "t5384_f92.png",
+        "result": "\"question\": \"Where can I relax outdoors?\",  \n\"answer\": \"On the canopy bed with white curtains under the trees.\"",
+        "category": "functional reasoning",
+        "question": "Where can I relax outdoors?",
+        "answer": "On the canopy bed with white curtains under the trees."
+    },
+    {
+        "image_name": "t5406_f98.png",
+        "result": "```json\n{\n  \"question\": \"What is hanging on the curtain rods?\",\n  \"answer\": \"Red drapes\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is hanging on the curtain rods?",
+        "answer": "Red drapes"
+    },
+    {
+        "image_name": "t5407_f44.png",
+        "result": "```json\n{\n  \"question\": \"Is the sliding door to the balcony open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the sliding door to the balcony open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t5448_f39.png",
+        "result": "\"question\": \"Where is the dining table?\",  \n\"answer\": \"Next to the kitchen, near the large windows.\"",
+        "category": "object localization",
+        "question": "Where is the dining table?",
+        "answer": "Next to the kitchen, near the large windows."
+    },
+    {
+        "image_name": "t551_f71.png",
+        "result": "\"question\": \"What is visible outside the window?\",  \n\"answer\": \"Trees\"",
+        "category": "object recognition",
+        "question": "What is visible outside the window?",
+        "answer": "Trees"
+    },
+    {
+        "image_name": "t5530_f39.png",
+        "result": "```json\n{\n  \"question\": \"Where is the ceiling fan located?\",\n  \"answer\": \"In the bedroom with green walls.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the ceiling fan located?",
+        "answer": "In the bedroom with green walls."
+    },
+    {
+        "image_name": "t5574_f68.png",
+        "result": "\"question\": \"What is located near the window in the bedroom?\",  \n\"answer\": \"A white table\"  ",
+        "category": "object recognition",
+        "question": "What is located near the window in the bedroom?",
+        "answer": "A white table"
+    },
+    {
+        "image_name": "t5593_f41.png",
+        "result": "\"question\": \"What is in front of the double doors?\",  \n\"answer\": \"A circular patterned tile design.\"  ",
+        "category": "spatial understanding",
+        "question": "What is in front of the double doors?",
+        "answer": "A circular patterned tile design."
+    },
+    {
+        "image_name": "t5606_f49.png",
+        "result": "\"question\": \"What is above the two lounge chairs?\",  \n\"answer\": \"A decorative ceiling fixture.\"",
+        "category": "spatial understanding",
+        "question": "What is above the two lounge chairs?",
+        "answer": "A decorative ceiling fixture."
+    },
+    {
+        "image_name": "t5610_f49.png",
+        "result": "\"question\": \"Are the sliding doors in the living room open or closed?\",  \n\"answer\": \"closed\"",
+        "category": "object state recognition",
+        "question": "Are the sliding doors in the living room open or closed?",
+        "answer": "closed"
+    },
+    {
+        "image_name": "t5614_f79.png",
+        "result": "```json\n{\n  \"question\": \"What is attached to the wall?\",\n  \"answer\": \"A metal railing\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is attached to the wall?",
+        "answer": "A metal railing"
+    },
+    {
+        "image_name": "t5628_f72.png",
+        "result": "\"question\": \"Is the window in the room open to let in light?\",  \n\"answer\": \"Yes\"",
+        "category": "object state recognition",
+        "question": "Is the window in the room open to let in light?",
+        "answer": "Yes"
+    },
+    {
+        "image_name": "t5634_f69.png",
+        "result": "{\"question\": \"Is the window open to let in light?\", \"answer\": \"Yes\"}",
+        "category": "object state recognition",
+        "question": "Is the window open to let in light?",
+        "answer": "Yes"
+    },
+    {
+        "image_name": "t5647_f54.png",
+        "result": "\"question\": \"Can I cook a meal in this kitchen?\",  \n\"answer\": \"Yes, it's fully equipped with a stove and countertops.\"",
+        "category": "world knowledge",
+        "question": "Can I cook a meal in this kitchen?",
+        "answer": "Yes, it's fully equipped with a stove and countertops."
+    },
+    {
+        "image_name": "t5676_f85.png",
+        "result": "\"question\": \"Where can I look at the view outside?\",  \n\"answer\": \"Through the glass doors.\"",
+        "category": "functional reasoning",
+        "question": "Where can I look at the view outside?",
+        "answer": "Through the glass doors."
+    },
+    {
+        "image_name": "t570_f51.png",
+        "result": "\"question\": \"What is above the sink in the bathroom?\",  \n\"answer\": \"A framed mirror\"",
+        "category": "spatial understanding",
+        "question": "What is above the sink in the bathroom?",
+        "answer": "A framed mirror"
+    },
+    {
+        "image_name": "t5725_f58.png",
+        "result": "\"question\": \"What is the color of the window frame?\",  \n\"answer\": \"brown\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the window frame?",
+        "answer": "brown"
+    },
+    {
+        "image_name": "t5734_f35.png",
+        "result": "```json\n{\n  \"question\": \"Where is the mirror with the photographer's tripod reflection?\",\n  \"answer\": \"At the end of the hallway.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the mirror with the photographer's tripod reflection?",
+        "answer": "At the end of the hallway."
+    },
+    {
+        "image_name": "t5741_f34.png",
+        "result": "\"question\": \"What is visible through the open doorway?\",  \n\"answer\": \"A living area with a sofa and a window with a view.\"  ",
+        "category": "object recognition",
+        "question": "What is visible through the open doorway?",
+        "answer": "A living area with a sofa and a window with a view."
+    },
+    {
+        "image_name": "t5815_f92.png",
+        "result": "**Question**: What color is the large wall on the right?  \n**Answer**: Gray",
+        "category": "attribute recognition",
+        "question": "What color is the large wall on the right?",
+        "answer": "Gray"
+    },
+    {
+        "image_name": "t5850_f55.png",
+        "result": "```json\n{\n  \"question\": \"What is the color of the bookshelf?\",\n  \"answer\": \"white\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the color of the bookshelf?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t5857_f51.png",
+        "result": "\"question\": \"What is above the dresser in the room?\",  \n\"answer\": \"An oval mirror.\"",
+        "category": "spatial understanding",
+        "question": "What is above the dresser in the room?",
+        "answer": "An oval mirror."
+    },
+    {
+        "image_name": "t595_f31.png",
+        "result": "\"question\": \"Where can I store items in this room?\",  \n\"answer\": \"In the white drawers or the pink storage bins under the window bench.\"",
+        "category": "functional reasoning",
+        "question": "Where can I store items in this room?",
+        "answer": "In the white drawers or the pink storage bins under the window bench."
+    },
+    {
+        "image_name": "t5975_f41.png",
+        "result": "\"question\": \"Can you play music in this room?\",  \n\"answer\": \"Yes, there is a drum set and a guitar case.\"",
+        "category": "world knowledge",
+        "question": "Can you play music in this room?",
+        "answer": "Yes, there is a drum set and a guitar case."
+    },
+    {
+        "image_name": "t5996_f90.png",
+        "result": "\"question\": \"Where can I take a shower?\",  \n\"answer\": \"In the shower area behind the white ruffled curtain\".  ",
+        "category": "functional reasoning",
+        "question": "Where can I take a shower?",
+        "answer": "In the shower area behind the white ruffled curtain"
+    },
+    {
+        "image_name": "t6000_f51.png",
+        "result": "\"question\": \"Where is the wooden door?\",  \n\"answer\": \"In the hallway near the bedroom.\"",
+        "category": "object localization",
+        "question": "Where is the wooden door?",
+        "answer": "In the hallway near the bedroom."
+    },
+    {
+        "image_name": "t6044_f45.png",
+        "result": "\"question\": \"What is in between the two outdoor benches?\",  \n\"answer\": \"A coffee table.\"",
+        "category": "spatial understanding",
+        "question": "What is in between the two outdoor benches?",
+        "answer": "A coffee table."
+    },
+    {
+        "image_name": "t6065_f23.png",
+        "result": "\"question\": \"Are the interior French doors to the room open or closed?\",  \n\"answer\": \"open\"",
+        "category": "object state recognition",
+        "question": "Are the interior French doors to the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t6114_f52.png",
+        "result": "\"question\": \"What is the color of the lower half of the bathroom walls?\",  \n\"answer\": \"green\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the lower half of the bathroom walls?",
+        "answer": "green"
+    },
+    {
+        "image_name": "t6117_f48.png",
+        "result": "\"question\": \"What is in front of the white curved wall near the floor?\",  \n\"answer\": \"A recessed circular area.\"  ",
+        "category": "spatial understanding",
+        "question": "What is in front of the white curved wall near the floor?",
+        "answer": "A recessed circular area."
+    },
+    {
+        "image_name": "t6158_f83.png",
+        "result": "\"Question\": \"Where can I take a shower?\"  \n\"Answer\": \"In the bathtub behind the shower curtain.\"  ",
+        "category": "functional reasoning",
+        "question": "Where can I take a shower?",
+        "answer": "In the bathtub behind the shower curtain."
+    },
+    {
+        "image_name": "t6190_f65.png",
+        "result": "\"question\": \"Where is the wooden bench with cushions?\",  \n\"answer\": \"Against the wall between the two windows in the bedroom.\"",
+        "category": "object localization",
+        "question": "Where is the wooden bench with cushions?",
+        "answer": "Against the wall between the two windows in the bedroom."
+    },
+    {
+        "image_name": "t619_f32.png",
+        "result": "\"question\": \"Can I see outside from this hallway?\",  \n\"answer\": \"Yes, through the glass doors at the end.\"",
+        "category": "world knowledge",
+        "question": "Can I see outside from this hallway?",
+        "answer": "Yes, through the glass doors at the end."
+    },
+    {
+        "image_name": "t6247_f64.png",
+        "result": "\"question\": \"What is placed on the black platform in the center?\",  \n\"answer\": \"Rolled towels and bath accessories\"",
+        "category": "object recognition",
+        "question": "What is placed on the black platform in the center?",
+        "answer": "Rolled towels and bath accessories"
+    },
+    {
+        "image_name": "t6251_f62.png",
+        "result": "\"question\": \"Is the projector in the room turned on or off?\",  \n\"answer\": \"off\"",
+        "category": "object state recognition",
+        "question": "Is the projector in the room turned on or off?",
+        "answer": "off"
+    },
+    {
+        "image_name": "t6261_f56.png",
+        "result": "\"question\": \"Can I take a shower in this bathroom?\",  \n\"answer\": \"Yes, there is a shower area next to the tub.\"",
+        "category": "world knowledge",
+        "question": "Can I take a shower in this bathroom?",
+        "answer": "Yes, there is a shower area next to the tub."
+    },
+    {
+        "image_name": "t6276_f47.png",
+        "result": "```json\n{\n  \"question\": \"Is the entrance door to the room open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the entrance door to the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t6317_f41.png",
+        "result": "\"question\": \"What is the color of the chairs on the patio?\",  \n\"answer\": \"gray\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the chairs on the patio?",
+        "answer": "gray"
+    },
+    {
+        "image_name": "t6349_f55.png",
+        "result": "\"question\": \"Where is the wooden bookshelf?\",  \n\"answer\": \"Next to the open wooden door in the hallway.\"",
+        "category": "object localization",
+        "question": "Where is the wooden bookshelf?",
+        "answer": "Next to the open wooden door in the hallway."
+    },
+    {
+        "image_name": "t6424_f39.png",
+        "result": "```json\n{\n  \"question\": \"Where is the bed with the green blanket?\",\n  \"answer\": \"In the bedroom with the 'LOVE' wall art.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the bed with the green blanket?",
+        "answer": "In the bedroom with the 'LOVE' wall art."
+    },
+    {
+        "image_name": "t6435_f60.png",
+        "result": "```json\n{\n  \"question\": \"Where can I hang a towel to dry?\",\n  \"answer\": \"On the wall hook.\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I hang a towel to dry?",
+        "answer": "On the wall hook."
+    },
+    {
+        "image_name": "t6436_f64.png",
+        "result": "```json\n{\n  \"question\": \"What can I use to play music?\",\n  \"answer\": \"The guitar hanging on the wall\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "What can I use to play music?",
+        "answer": "The guitar hanging on the wall"
+    },
+    {
+        "image_name": "t6442_f44.png",
+        "result": "```json\n{\n  \"question\": \"What color are the bathroom walls?\",\n  \"answer\": \"beige\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What color are the bathroom walls?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t6472_f39.png",
+        "result": "\"question\": \"Is this building suitable for a formal event?\",  \n\"answer\": \"Yes, it has an ornate and elegant interior.\"",
+        "category": "world knowledge",
+        "question": "Is this building suitable for a formal event?",
+        "answer": "Yes, it has an ornate and elegant interior."
+    },
+    {
+        "image_name": "t6516_f50.png",
+        "result": "\"question\": \"Is the entrance door to the room open or closed?\",  \n\"answer\": \"open\"  ",
+        "category": "object state recognition",
+        "question": "Is the entrance door to the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t6534_f72.png",
+        "result": "\"question\": \"What is above the armchair in the living room?\",  \n\"answer\": \"A mirror\"  ",
+        "category": "spatial understanding",
+        "question": "What is above the armchair in the living room?",
+        "answer": "A mirror"
+    },
+    {
+        "image_name": "t6611_f75.png",
+        "result": "\"question\": \"Where can I hang my clothes?\",  \n\"answer\": \"In the closet with the louvered doors.\"  ",
+        "category": "functional reasoning",
+        "question": "Where can I hang my clothes?",
+        "answer": "In the closet with the louvered doors."
+    },
+    {
+        "image_name": "t6618_f78.png",
+        "result": "\"question\": \"What is in front of the curtain in the room?\",  \n\"answer\": \"A shower.\"",
+        "category": "spatial understanding",
+        "question": "What is in front of the curtain in the room?",
+        "answer": "A shower."
+    },
+    {
+        "image_name": "t6694_f46.png",
+        "result": "```json\n{\n  \"question\": \"Where is the refrigerator?\",\n  \"answer\": \"In the kitchen next to the cabinets\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the refrigerator?",
+        "answer": "In the kitchen next to the cabinets"
+    },
+    {
+        "image_name": "t6700_f97.png",
+        "result": "```json\n{\n  \"question\": \"What is the color of the wall?\",\n  \"answer\": \"beige\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the color of the wall?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t6742_f87.png",
+        "result": "\"question\": \"What is the color of the walls in the room?\",  \n\"answer\": \"white\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the walls in the room?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t6746_f84.png",
+        "result": "\"question\": \"What is the color of the bedroom walls?\",  \n\"answer\": \"white\"",
+        "category": "attribute recognition",
+        "question": "What is the color of the bedroom walls?",
+        "answer": "white"
+    },
+    {
+        "image_name": "t6757_f56.png",
+        "result": "\"question\": \"What is located on the white desks?\",  \n\"answer\": \"office chairs\"",
+        "category": "object recognition",
+        "question": "What is located on the white desks?",
+        "answer": "office chairs"
+    },
+    {
+        "image_name": "t6772_f41.png",
+        "result": "```json\n{\n  \"question\": \"What is on the counter near the sink?\",\n  \"answer\": \"a basket with utensils and vegetables\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the counter near the sink?",
+        "answer": "a basket with utensils and vegetables"
+    },
+    {
+        "image_name": "t6787_f42.png",
+        "result": "\"question\": \"Where is the small sink with the cupboard?\",  \n\"answer\": \"In the laundry room near the tiled floor area.\"",
+        "category": "object localization",
+        "question": "Where is the small sink with the cupboard?",
+        "answer": "In the laundry room near the tiled floor area."
+    },
+    {
+        "image_name": "t6797_f84.png",
+        "result": "```json\n{\n  \"question\": \"What color are the kitchen cabinets?\",\n  \"answer\": \"brown\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What color are the kitchen cabinets?",
+        "answer": "brown"
+    },
+    {
+        "image_name": "t6801_f53.png",
+        "result": "\"question\": \"Is there enough seating in this room for a small meeting?\",  \n\"answer\": \"Yes, there are three chairs around the table.\"  ",
+        "category": "world knowledge",
+        "question": "Is there enough seating in this room for a small meeting?",
+        "answer": "Yes, there are three chairs around the table."
+    },
+    {
+        "image_name": "t6806_f59.png",
+        "result": "\"question\": \"What is on top of the ledge in the shower area?\",  \n\"answer\": \"A bottle.\"  ",
+        "category": "spatial understanding",
+        "question": "What is on top of the ledge in the shower area?",
+        "answer": "A bottle."
+    },
+    {
+        "image_name": "t6854_f78.png",
+        "result": "\"question\": \"What is the color of the window blinds?\",  \n\"answer\": \"beige\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the window blinds?",
+        "answer": "beige"
+    },
+    {
+        "image_name": "t6923_f93.png",
+        "result": "\"question\": \"Is the sliding glass door open or closed?\",  \n\"answer\": \"Open\"",
+        "category": "object state recognition",
+        "question": "Is the sliding glass door open or closed?",
+        "answer": "Open"
+    },
+    {
+        "image_name": "t6943_f37.png",
+        "result": "\"question\": \"Where can I wash my hands?\",  \n\"answer\": \"In the sinks on the bathroom counter.\"",
+        "category": "functional reasoning",
+        "question": "Where can I wash my hands?",
+        "answer": "In the sinks on the bathroom counter."
+    },
+    {
+        "image_name": "t6995_f77.png",
+        "result": "\"question\": \"What can I use to protect the floor while painting?\",  \n\"answer\": \"The large roll of brown paper or the drop cloths on the floor.\"",
+        "category": "functional reasoning",
+        "question": "What can I use to protect the floor while painting?",
+        "answer": "The large roll of brown paper or the drop cloths on the floor."
+    },
+    {
+        "image_name": "t6997_f56.png",
+        "result": "```json\n{\n  \"question\": \"What is the color of the end door in the hallway?\",\n  \"answer\": \"red\"\n}\n```",
+        "category": "attribute recognition",
+        "question": "What is the color of the end door in the hallway?",
+        "answer": "red"
+    },
+    {
+        "image_name": "t7037_f45.png",
+        "result": "\"question\": \"Can I store extra dishes in this space?\",  \n\"answer\": \"Yes, there is storage with cabinets available.\"",
+        "category": "world knowledge",
+        "question": "Can I store extra dishes in this space?",
+        "answer": "Yes, there is storage with cabinets available."
+    },
+    {
+        "image_name": "t7047_f82.png",
+        "result": "```json\n{\n  \"question\": \"Is the entrance door to the room open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the entrance door to the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t7059_f72.png",
+        "result": "\"question\": \"Are the window panes intact or broken?\",  \n\"answer\": \"broken\"  ",
+        "category": "object state recognition",
+        "question": "Are the window panes intact or broken?",
+        "answer": "broken"
+    },
+    {
+        "image_name": "t7091_f47.png",
+        "result": "\"question\": \"Where is the shoe rack located?\",  \n\"answer\": \"In the walk-in closet.\"",
+        "category": "object localization",
+        "question": "Where is the shoe rack located?",
+        "answer": "In the walk-in closet."
+    },
+    {
+        "image_name": "t711_f76.png",
+        "result": "```json\n{\n  \"question\": \"Is the door leading to the room open or closed?\",\n  \"answer\": \"open\"\n}\n```",
+        "category": "object state recognition",
+        "question": "Is the door leading to the room open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t7126_f50.png",
+        "result": "\"question\": \"Is the entrance door to the room on the right open or closed?\",  \n\"answer\": \"open\"",
+        "category": "object state recognition",
+        "question": "Is the entrance door to the room on the right open or closed?",
+        "answer": "open"
+    },
+    {
+        "image_name": "t7130_f38.png",
+        "result": "```json\n{\n  \"question\": \"Where is the wooden bed with the blue bedsheet?\",\n  \"answer\": \"In the bedroom with blue curtains and a large window.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the wooden bed with the blue bedsheet?",
+        "answer": "In the bedroom with blue curtains and a large window."
+    },
+    {
+        "image_name": "t7154_f90.png",
+        "result": "\"question\": \"What material are the stalls made of?\",  \n\"answer\": \"wood\"",
+        "category": "attribute recognition",
+        "question": "What material are the stalls made of?",
+        "answer": "wood"
+    },
+    {
+        "image_name": "t7155_f48.png",
+        "result": "\"question\": \"What is below the mounted TV?\",  \n\"answer\": \"A shelf.\"",
+        "category": "spatial understanding",
+        "question": "What is below the mounted TV?",
+        "answer": "A shelf."
+    },
+    {
+        "image_name": "t7163_f91.png",
+        "result": "```json\n{\n  \"question\": \"What is in between the chair and the bed?\",\n  \"answer\": \"A nightstand with a lamp and plant\"\n}\n```",
+        "category": "spatial understanding",
+        "question": "What is in between the chair and the bed?",
+        "answer": "A nightstand with a lamp and plant"
+    },
+    {
+        "image_name": "t7220_f60.png",
+        "result": "\"question\": \"Can I host a barbecue here?\",  \n\"answer\": \"Yes, there is outdoor seating available.\"",
+        "category": "world knowledge",
+        "question": "Can I host a barbecue here?",
+        "answer": "Yes, there is outdoor seating available."
+    },
+    {
+        "image_name": "t7233_f64.png",
+        "result": "```json\n{\n  \"question\": \"Where can I use the restroom?\",\n  \"answer\": \"The toilet in the bathroom\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I use the restroom?",
+        "answer": "The toilet in the bathroom"
+    },
+    {
+        "image_name": "t7261_f48.png",
+        "result": "```json\n{\n  \"question\": \"What is on the small table near the chairs?\",\n  \"answer\": \"A flower vase\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the small table near the chairs?",
+        "answer": "A flower vase"
+    },
+    {
+        "image_name": "t7280_f32.png",
+        "result": "\"question\": \"What material are the room's walls made from?\",  \n\"answer\": \"wood\"  ",
+        "category": "attribute recognition",
+        "question": "What material are the room's walls made from?",
+        "answer": "wood"
+    },
+    {
+        "image_name": "t7283_f74.png",
+        "result": "\"question\": \"What is next to the pool on the right?\",  \n\"answer\": \"a pathway\"",
+        "category": "object recognition",
+        "question": "What is next to the pool on the right?",
+        "answer": "a pathway"
+    },
+    {
+        "image_name": "t7300_f33.png",
+        "result": "\"question\": \"What is in front of the fireplace?\",  \n\"answer\": \"Two chairs and a wooden box.\"  ",
+        "category": "spatial understanding",
+        "question": "What is in front of the fireplace?",
+        "answer": "Two chairs and a wooden box."
+    },
+    {
+        "image_name": "t7301_f40.png",
+        "result": "```json\n{\n  \"question\": \"Where is the dining table?\",\n  \"answer\": \"In the dining room past the pillars.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the dining table?",
+        "answer": "In the dining room past the pillars."
+    },
+    {
+        "image_name": "t7303_f47.png",
+        "result": "```json\n{\n  \"question\": \"Where can I hang artwork?\",\n  \"answer\": \"On the wall in the room with the colorful mountain mural.\"\n}\n```",
+        "category": "functional reasoning",
+        "question": "Where can I hang artwork?",
+        "answer": "On the wall in the room with the colorful mountain mural."
+    },
+    {
+        "image_name": "t734_f49.png",
+        "result": "```json\n{\n  \"question\": \"What is on the ceiling in the hallway?\",\n  \"answer\": \"A ceiling fan\"\n}\n```",
+        "category": "object recognition",
+        "question": "What is on the ceiling in the hallway?",
+        "answer": "A ceiling fan"
+    },
+    {
+        "image_name": "t757_f62.png",
+        "result": "\"question\": \"What is in between the two couches on the right side of the patio?\",  \n\"answer\": \"A small table with a decorative mat\"  ",
+        "category": "spatial understanding",
+        "question": "What is in between the two couches on the right side of the patio?",
+        "answer": "A small table with a decorative mat"
+    },
+    {
+        "image_name": "t776_f43.png",
+        "result": "```json\n{\n  \"question\": \"Where is the fireplace?\",\n  \"answer\": \"In the living room with two red chairs and a large ceiling fan.\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the fireplace?",
+        "answer": "In the living room with two red chairs and a large ceiling fan."
+    },
+    {
+        "image_name": "t851_f37.png",
+        "result": "```json\n{\n  \"question\": \"Where is the potted plant?\",\n  \"answer\": \"Next to the windows in the living room\"\n}\n```",
+        "category": "object localization",
+        "question": "Where is the potted plant?",
+        "answer": "Next to the windows in the living room"
+    },
+    {
+        "image_name": "t929_f73.png",
+        "result": "\"question\": \"What is in between the two sculptures near the entrance?\",  \n\"answer\": \"The double doors.\"",
+        "category": "spatial understanding",
+        "question": "What is in between the two sculptures near the entrance?",
+        "answer": "The double doors."
+    },
+    {
+        "image_name": "t933_f54.png",
+        "result": "```json\n{\n  \"question\": \"Is this room suitable for hosting a formal meeting?\",\n  \"answer\": \"Yes, it has an elegant table and seating.\"\n}\n```",
+        "category": "world knowledge",
+        "question": "Is this room suitable for hosting a formal meeting?",
+        "answer": "Yes, it has an elegant table and seating."
+    },
+    {
+        "image_name": "t93_f65.png",
+        "result": "\"question\": \"What is in between the two chairs on the right side of the room?\",  \n\"answer\": \"A glass cabinet.\"",
+        "category": "spatial understanding",
+        "question": "What is in between the two chairs on the right side of the room?",
+        "answer": "A glass cabinet."
+    },
+    {
+        "image_name": "t947_f37.png",
+        "result": "\"question\": \"Where can I sit to read a book?\",  \n\"answer\": \"The armchair near the desk.\"",
+        "category": "functional reasoning",
+        "question": "Where can I sit to read a book?",
+        "answer": "The armchair near the desk."
+    },
+    {
+        "image_name": "t985_f59.png",
+        "result": "\"question\": \"What is the color of the walls in the living room?\",  \n\"answer\": \"white\"  ",
+        "category": "attribute recognition",
+        "question": "What is the color of the walls in the living room?",
+        "answer": "white"
+    }
+]

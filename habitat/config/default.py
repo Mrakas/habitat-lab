@@ -198,6 +198,8 @@ _C.TASK.INSTRUCTION_SENSOR_UUID = "instruction"
 _C.TASK.DISTANCE_TO_GOAL = CN()
 _C.TASK.DISTANCE_TO_GOAL.TYPE = "DistanceToGoal"
 _C.TASK.DISTANCE_TO_GOAL.DISTANCE_TO = "POINT"
+
+
 # -----------------------------------------------------------------------------
 # # ANSWER_ACCURACY MEASUREMENT
 # -----------------------------------------------------------------------------
@@ -249,6 +251,14 @@ _C.SIMULATOR.DEPTH_SENSOR.NORMALIZE_DEPTH = True
 # -----------------------------------------------------------------------------
 _C.SIMULATOR.SEMANTIC_SENSOR = SIMULATOR_SENSOR.clone()
 _C.SIMULATOR.SEMANTIC_SENSOR.TYPE = "HabitatSimSemanticSensor"
+# -----------------------------------------------------------------------------
+# MARCUS ADD:egomap config
+# -----------------------------------------------------------------------------
+_C.TASK.EGOMAP_SENSOR = SIMULATOR_SENSOR.clone()
+_C.TASK.EGOMAP_SENSOR.TYPE = "EgoMap"
+_C.TASK.EGOMAP_SENSOR.MAP_SIZE = 31
+_C.TASK.EGOMAP_SENSOR.MAP_RESOLUTION = 0.1
+_C.TASK.EGOMAP_SENSOR.HEIGHT_THRESH = (0.5, 2.0)
 # -----------------------------------------------------------------------------
 # AGENT
 # -----------------------------------------------------------------------------

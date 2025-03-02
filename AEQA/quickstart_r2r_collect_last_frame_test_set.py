@@ -18,25 +18,15 @@ from habitat.tasks.nav.shortest_path_follower import ShortestPathFollower
 from PIL import Image
 from tqdm import tqdm
 
-img_save_path = "/mnt/data5/ghx/workplace/habitat-lab/AEQA/debug"
+img_save_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/last_frames_folder_rgb_semantic/last_frame_test_rgb_semantic"
 def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
 
-def save_image(epsode_id, trajectory_id, frame_id, img_path, observations, save_semantic=True, save_depth=True):
+def save_image(epsode_id, trajectory_id, frame_id, img_path, observations, save_semantic=True):
     image_name = "t" + str(trajectory_id) + "_f" + str(frame_id) + ".png"
     image_full_path = os.path.join(img_path, image_name)
     sem_full_path = os.path.join(img_path, "semantic_" + image_name)
-    depth_full_path = os.path.join(img_path, "depth_" + image_name)
-    import ipdb;ipdb.set_trace()
-    if save_depth:
-        dep = observations["depth"]
-        # 保存深度图像
-        dep_rgb = habitat_sim.utils.viz_utils.depth_to_rgb(depth_image=dep, clip_max=10)
-        if not cv2.imwrite(depth_full_path, dep_rgb):
-            raise ValueError(f"Failed to save depth image at {depth_full_path}")
-        
-    import ipdb;ipdb.set_trace()
-
+    #import ipdb;ipdb.set_trace()
     if save_semantic:
         sem = observations["semantic"]  # 256*256 uint32
         # 将uint32拆分为RGB通道
@@ -63,7 +53,7 @@ def full_episode_over(position, goal_position):
 
 SKIP_FRAME = 1 #多少帧采集一次图片
 START_IDX = 0
-END_IDX = 2 #采集多少张图片
+END_IDX = 99999 #采集多少张图片
 
 def example():
     config=habitat.get_config("/mnt/data5/ghx/workplace/habitat-lab/configs/tasks/vln_r2r.yaml")
@@ -85,7 +75,7 @@ def example():
 
     for _ in tqdm(range(len(env.episodes[START_IDX:END_IDX]))): #tqdm
         obs1 = env.reset()
-
+        import ipdb;ipdb.set_trace()
         path = env.current_episode.reference_path + [
             env.current_episode.goals[0].position
         ]
@@ -95,8 +85,7 @@ def example():
         for point in path[1:]:#第一个point 和起点一样 skip
             
             while full_episode_over(env.sim.get_agent_state().position, path[-1]) == False:
-                import ipdb;ipdb.set_trace()
-                print("----distance to cur_target", np.linalg.norm(env.sim.get_agent_state().position - point))
+                
                 best_action = follower.get_next_action(point)
                 if best_action == 0:
                     break
@@ -121,9 +110,8 @@ def example():
             print("save image failed")
             return 0
         
-        #point_in_bbox(env)
-        import ipdb;ipdb.set_trace()
-        get_current_room_info(env)
+        #import ipdb;ipdb.set_trace()
+
 
 def point_in_bbox(point, bbox):
     """检查点是否在包围盒内"""

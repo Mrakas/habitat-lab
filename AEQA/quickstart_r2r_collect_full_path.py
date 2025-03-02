@@ -12,7 +12,7 @@ import time
 import sys
 from habitat.tasks.nav.shortest_path_follower import ShortestPathFollower
 
-img_save_path = "/mnt/data5/ghx/workplace/habitat-lab/data/collect_data/test_full_path"
+img_save_path = "/mnt/data5/ghx/workplace/habitat-lab/AEQA/full_path_test"
 def transform_rgb_bgr(image):
     return image[:, :, [2, 1, 0]]
 
@@ -33,7 +33,7 @@ SKIP_FRAME = 1 #多少帧采集一次图片
 END_IDX = 10 #多少条轨迹？
 def example():
     env = habitat.Env(
-        config=habitat.get_config("AEQA/vln_r2r_21.yaml")
+        config=habitat.get_config("/mnt/data5/ghx/workplace/habitat-lab/configs/tasks/vln_r2r.yaml")
     )
     #env.sim.get_agent_state()
     #env.seed(25)

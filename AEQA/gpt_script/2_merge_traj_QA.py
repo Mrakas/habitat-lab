@@ -44,4 +44,4 @@ for episode in withQA_data['episodes']:
 with open(model_json_path, "w") as f:
     json.dump(withQA_data, f, indent=4)
 
-
+print("save to ",model_json_path)

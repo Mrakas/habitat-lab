@@ -1,3 +1,10 @@
+#my ignore file
+AEQA/debug
+AEQA/debug_molmo
+AEQA/debug_topdown
+AEQA/debugjson
+AEQA/full_path_test
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
